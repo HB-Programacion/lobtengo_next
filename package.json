@@ -1,0 +1,29 @@
+{
+  "name": "lobtengo",
+  "version": "1.0.0",
+  "description": "Plataforma de sorteos de departamentos",
+  "main": "index.js",
+  "dependencies": {
+    "next": "^10.2.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "deploy": "now"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JudithCristina/lobtengo_next.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JudithCristina/lobtengo_next/issues"
+  },
+  "homepage": "https://github.com/JudithCristina/lobtengo_next#readme"
+}
