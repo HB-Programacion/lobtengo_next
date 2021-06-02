@@ -4,9 +4,17 @@ import Link from "next/link";
 
 const index = () => {
   return (
-    <div>
-      <p>Bienvenido a LOBTENGO</p>
-    </div>
+    <>
+      <div>
+        <p>Bienvenido a LOBTENGO</p>
+      </div>
+      <style jsx>
+{`
+
+`}
+      </style>
+    </>
+
   )
 }
 
