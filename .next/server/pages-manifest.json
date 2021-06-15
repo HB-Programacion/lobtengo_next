@@ -2,7 +2,5 @@
   "/_document": "pages/_document.js",
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
-  "/404": "pages/404.js",
-  "/": "pages/index.js",
-  "/Participate/ChooseTickets": "pages/Participate/ChooseTickets.js"
+  "/": "pages/index.js"
 }
