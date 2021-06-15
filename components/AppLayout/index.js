@@ -2,7 +2,7 @@ import React from "react";
 import Head from "next/head";
 import Header from "../Header";
 
-const index = () => {
+const index = ({ children }) => {
   return (
     <div>
       <Head>
@@ -10,6 +10,7 @@ const index = () => {
         <meta name="description" content="esto es descripcion"></meta>
       </Head>
       <Header></Header>
+      <main>{children}</main>
       <style jsx global>
         {`
           html {
