@@ -4,11 +4,12 @@
   "description": "Plataforma de sorteos de departamentos",
   "main": "index.js",
   "dependencies": {
+    "bootstrap": "^5.0.1",
     "next": "^10.2.0",
     "react": "^17.0.2",
+    "react-bootstrap": "^1.6.1",
     "react-dom": "^17.0.2"
   },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "next",
