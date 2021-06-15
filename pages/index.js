@@ -1,10 +1,12 @@
 import React from 'react'
 import Image from "next/image";
+import Link from "next/link";
+import AppLayout from "../components/AppLayout";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const index = () => {
   return (
-    <>
+    <AppLayout>
       <div className="fade-in animated">
         <section fluid="true" className="box-banner">
           <div className="banner view-desktop tilt-in-fwd-tr">
@@ -46,8 +48,8 @@ const index = () => {
           }
         `}
       </style>
-    </>
-  );
+    </AppLayout>
+  )
 }
 
 export default index
