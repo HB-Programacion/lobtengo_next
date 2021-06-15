@@ -227,7 +227,11 @@ module.exports = require("styled-jsx/style");;
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = function(moduleId) { return __webpack_require__(__webpack_require__.s = moduleId); }
+<<<<<<< HEAD
 var __webpack_exports__ = __webpack_require__.X(0, ["vendors-node_modules_babel_runtime_helpers_extends_js-node_modules_babel_runtime_helpers_inte-75b299","vendors-node_modules_next_document_js"], function() { return __webpack_exec__("./pages/_document.js"); });
+=======
+var __webpack_exports__ = __webpack_require__.X(0, ["vendors-node_modules_babel_runtime_helpers_extends_js-node_modules_babel_runtime_helpers_inte-f89ba9","vendors-node_modules_next_document_js"], function() { return __webpack_exec__("./pages/_document.js"); });
+>>>>>>> f1-cliente-narda
 module.exports = __webpack_exports__;
 
 })();
