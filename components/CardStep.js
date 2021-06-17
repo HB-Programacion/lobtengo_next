@@ -55,11 +55,10 @@ const CardStep = () => {
             {`
                 .container-step{
                     display: flex;
-                    place-content: flex-end;
                 }
                 .card-step {
                 text-align: center;
-                padding: 4rem 1rem;
+                padding: 2rem 1rem;
                 background: #ffffff;
                 box-shadow: 2px 2px 13px 2px rgba(0, 0, 0, 0.2);
                 border-radius: 20px;
@@ -74,24 +73,26 @@ const CardStep = () => {
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    width: 60%;
+                    width: 50%;
                 }
                 .card-step-title {
                     text-align-last: center;
-                    font-size: 1.5rem;
-                    font-weight: 600;
-                    font-family: "mont-regular" !important;
+                    font-size: 1.8rem;
+                    font-weight: 700;
+                    font-family: "neutra-text-bold";
+                    color: #3A487F;
                     text-align: start;
                     letter-spacing:.01rem;
                     line-height:1.6rem
                 }
                 .card-step-description {
-                    font-size: 1.2rem;
-                    font-family: "mont-regular" !important;
-                    font-weight: 300;
+                    font-size: 1.0rem;
+                    font-family: "neutra-text-bold";
+                    color: #3A487F;
+                    font-weight: 400;
                     text-align: start;
                     line-height:1.5rem;
-                    text-align-last: center;
+                    text-align: center;
                 }
             `}
         </style>
