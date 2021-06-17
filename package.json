@@ -4,6 +4,11 @@
   "description": "Plataforma de sorteos de departamentos",
   "main": "index.js",
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.35",
+    "@fortawesome/free-brands-svg-icons": "^5.15.3",
+    "@fortawesome/free-regular-svg-icons": "^5.15.3",
+    "@fortawesome/free-solid-svg-icons": "^5.15.3",
+    "@fortawesome/react-fontawesome": "^0.1.14",
     "bootstrap": "^5.0.1",
     "next": "^10.2.3",
     "react": "^17.0.2",
@@ -12,9 +17,9 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "next",
+    "dev": "next -p 3002",
     "build": "next build",
-    "start": "next start",
+    "start": "next start -p 3002",
     "deploy": "now"
   },
   "repository": {

@@ -1,6 +1,6 @@
 import React from "react";
 import Head from "next/head";
-import Header from "../Header";
+import Header from "../Header/Header";
 
 const index = ({ children }) => {
   return (
@@ -34,6 +34,10 @@ const index = ({ children }) => {
           @font-face {
             font-family: "neutra-text-ligth-demi";
             src: url(/fonts/Neutra-Text-Light-Demi.ttf);
+          }
+
+          .cl-plomo{
+            color:#878787
           }
         `}
       </style>
