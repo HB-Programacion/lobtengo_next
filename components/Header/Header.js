@@ -6,7 +6,7 @@ import { useRouter } from "next/router";
 import Link from "next/link";
 // import ActiveLink from "./../ActiveLink";
 
-const Header = () => {
+const Header = (props) => {
   const router = useRouter();
   return (
     <div>
@@ -36,7 +36,7 @@ const Header = () => {
             <a className="header__item cl-plomo">participa</a>
           </Link>
         </div>
-        <div className="burger">
+        <div className="burger" onClick={props.mostrarMenuMobile}>
           <FontAwesomeIcon icon={faBars} />
         </div>
 
