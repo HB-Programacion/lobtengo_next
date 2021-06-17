@@ -1,15 +1,32 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Head from "next/head";
 import Header from "../Header/Header";
+import HeaderMobile from "../Header/HeaderMobile";
 
 const index = ({ children }) => {
+  const [menuBurgerOpen, setmenuBurgerOpen] = useState(false);
+  const mostrarMenuMobile = () => {
+    console.log('abrir');
+    setmenuBurgerOpen(true);
+  };
+  const ocultarMenuMobile = () => {
+    console.log('cerrar');
+    setmenuBurgerOpen(false);
+  };
+
   return (
     <div>
       <Head>
         <title>lobtengo</title>
         <meta name="description" content="esto es descripcion"></meta>
       </Head>
-      <Header></Header>
+      <Header
+        mostrarMenuMobile={mostrarMenuMobile}
+        ocultarMenuMobile={ocultarMenuMobile}
+      />
+      <HeaderMobile
+      menuBurgerOpen={menuBurgerOpen}
+      ocultarMenuMobile={ocultarMenuMobile}/>
       <main>{children}</main>
       <style jsx global>
         {`
@@ -36,8 +53,8 @@ const index = ({ children }) => {
             src: url(/fonts/Neutra-Text-Light-Demi.ttf);
           }
 
-          .cl-plomo{
-            color:#878787
+          .cl-plomo {
+            color: #878787;
           }
         `}
       </style>
