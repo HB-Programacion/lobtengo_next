@@ -6,11 +6,11 @@ import HeaderMobile from "../Header/HeaderMobile";
 const index = ({ children }) => {
   const [menuBurgerOpen, setmenuBurgerOpen] = useState(false);
   const mostrarMenuMobile = () => {
-    console.log('abrir');
+    console.log("abrir");
     setmenuBurgerOpen(true);
   };
   const ocultarMenuMobile = () => {
-    console.log('cerrar');
+    console.log("cerrar");
     setmenuBurgerOpen(false);
   };
 
@@ -25,8 +25,9 @@ const index = ({ children }) => {
         ocultarMenuMobile={ocultarMenuMobile}
       />
       <HeaderMobile
-      menuBurgerOpen={menuBurgerOpen}
-      ocultarMenuMobile={ocultarMenuMobile}/>
+        menuBurgerOpen={menuBurgerOpen}
+        ocultarMenuMobile={ocultarMenuMobile}
+      />
       <main>{children}</main>
       <style jsx global>
         {`
@@ -55,6 +56,12 @@ const index = ({ children }) => {
 
           .cl-plomo {
             color: #878787;
+          }
+
+          @media (max-width: 768px) {
+            html {
+              font-size: 4.6vw !important;
+            }
           }
         `}
       </style>

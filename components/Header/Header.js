@@ -10,7 +10,7 @@ const Header = (props) => {
   const router = useRouter();
   return (
     <div>
-      <div className="header">
+      <nav className="header">
         <Link href="/" prefetch className="header__item logo">
           <a>
             <Image
@@ -44,7 +44,7 @@ const Header = (props) => {
           <Link href="/" ><a className="header__item cl-plomo">ayuda</a></Link>
           <Link href="/"><a  className="header__item header__rigth-login">login</a></Link>
         </div>
-      </div>
+      </nav>
       <style jsx>
         {`
           .header {
@@ -98,7 +98,7 @@ const Header = (props) => {
             }
             .burger{
             display:block;
-            font-size:6rem;
+            font-size:1.6rem;
             color: #FC6625
           }
           .box-nav{

@@ -7,10 +7,23 @@ const HeaderMobile = (props) => {
   }
   return (
     <>
-      <div className={drawerClasses}>
-        hola soy menu mobile
-        <p onClick={props.ocultarMenuMobile}>x</p>
-      </div>
+      <nav className={drawerClasses}>
+        <p className="cerrar" onClick={props.ocultarMenuMobile}>
+          x
+        </p>
+
+        <ul className="header__mobile">
+          <li>Nombre</li>
+          <li>Mi perfil</li>
+          <li>Mis compras</li>
+          <li>Inicio</li>
+          <li>Nosotros</li>
+          <li>Como Funciona</li>
+          <li>Participa</li>
+          <li>El depa</li>
+          <li>Ayuda</li>
+        </ul>
+      </nav>
       <style jsx>
         {`
           .side__drawer {
@@ -28,9 +41,23 @@ const HeaderMobile = (props) => {
             z-index: 9999;
             transition: transform 0.3s ease-out;
             transform: translateX(100%);
+            padding:2rem 3rem
           }
           .side__drawer.open {
             transform: translateX(0%);
+          }
+
+          .header__mobile {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+            color: #ffff;
+            font-size: 1rem;
+          }
+          .cerrar {
+            font-size: 2rem;
+            color:#ffff
           }
         `}
       </style>
