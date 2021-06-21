@@ -5,9 +5,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import AppLayout from "../components/AppLayout";
 import { CardDeck, Carousel, Col, Container, Row } from "react-bootstrap";
-import CardStep from "../components/CardStep";
-import BannerCounter from "../components/BannerCounter";
-import CardPreguntas from "../components/CardPreguntas";
+import CardStep from '../components/Home/CardStep';
+import BannerCounter from '../components/Home/BannerCounter'
+import CardPreguntas from '../components/Home/CardPreguntas';
 
 const index = () => {
   const initialState = [
