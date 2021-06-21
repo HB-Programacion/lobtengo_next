@@ -1,58 +1,58 @@
-import React, {Component, useState} from "react";
+import React, { Component, useState } from "react";
 import { Card } from "react-bootstrap";
 
 const CardStep = () => {
+  const initialState = [
+    {
+      id: 1,
+      image: "/icons/home/step1.svg",
+      title: "Regístrate",
+      subtitle:
+        "Crea tu perfil y llena tus datos Solo los usaremos para avisarte que has ganado.",
+    },
+    {
+      id: 2,
+      image: "/icons/home/step2.svg",
+      title: "Compra tus tickets",
+      subtitle:
+        "Consigue tus opciones desde S/ 60. A más tickets, más opciones de ganar.",
+    },
+    {
+      id: 3,
+      image: "/icons/home/step3.svg",
+      title: "Espera el sorteo",
+      subtitle:
+        "Síguelo en vivo a través de nuestras redes sociales. El primer sorteo se realizará este 15 de junio.",
+    },
+  ];
 
-    const initialState = [
-        {
-          id: 1,
-          image: "/icons/home/step1.svg",
-          title: 'Regístrate',
-          subtitle: 'Crea tu perfil y llena tus datos Solo los usaremos para avisarte que has ganado.'
-        },
-        {
-          id: 2,
-          image: "/icons/home/step2.svg",
-          title: 'Compra tus tickets',
-          subtitle: 'Consigue tus opciones desde S/ 60. A más tickets, más opciones de ganar.'
-        },
-        {
-          id: 3,
-          image: "/icons/home/step3.svg",
-          title: 'Espera el sorteo',
-          subtitle: 'Síguelo en vivo a través de nuestras redes sociales. El primer sorteo se realizará este 15 de junio.'
-        },
-      ];
-    
-      const [banner, setBanner] = useState(initialState);
+  const [banner, setBanner] = useState(initialState);
 
-    return(
-    <>      
-        <div className="container-step">
-            {banner.map((ban) => (
-                <div className="card-step">
-                    <div className="card-img">
-                        <Card.Img
-                            variant="top"
-                            src={ban.image}
-                            className="card-img-step"
-                        />
-                    </div>
-                    <Card.Body>
-                        <Card.Title>
-                            <div className="card-step-title">{ban.title}</div>
-                        </Card.Title>
-                        <Card.Text>
-                            <div className="card-step-description">
-                                {ban.subtitle}
-                            </div>
-                        </Card.Text>
-                    </Card.Body>
-                </div>
-            ))}
-        </div>
-        <style jsx>
-            {`
+  return (
+    <>
+      <div className="container-step">
+        {banner.map((ban) => (
+          <div className="card-step">
+            <div className="card-img">
+              <Card.Img
+                variant="top"
+                src={ban.image}
+                className="card-img-step"
+              />
+            </div>
+            <Card.Body>
+              <Card.Title>
+                <div className="card-step-title">{ban.title}</div>
+              </Card.Title>
+              <Card.Text>
+                <div className="card-step-description">{ban.subtitle}</div>
+              </Card.Text>
+            </Card.Body>
+          </div>
+        ))}
+      </div>
+      <style jsx>
+        {`
                 .container-step{
                     display: flex;
                 }
@@ -67,6 +67,7 @@ const CardStep = () => {
                 height: auto;
                 margin-bottom: 30px;
                 margin: 8rem 2rem;
+      
                 }
                 .card-img {
                     margin: auto;
@@ -94,10 +95,25 @@ const CardStep = () => {
                     line-height:1.5rem;
                     text-align: center;
                 }
+
+                @media (max-width: 768px) {
+                    .container-step{
+                    flex-direction: column;
+                    align-items:center
+                }
+
+                .card-step {
+                margin: 1rem 0rem;
+                
+                }
+                .card-step-title {
+                    font-size: 1rem;
+                    line-height:1rem
+                }
             `}
-        </style>
+      </style>
     </>
-    )
-}
+  );
+};
 
 export default CardStep;
