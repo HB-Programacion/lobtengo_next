@@ -5,9 +5,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import AppLayout from "../components/AppLayout";
 import { CardDeck, Carousel, Col, Container, Row } from "react-bootstrap";
-import CardStep from '../components/Home/CardStep';
-import BannerCounter from '../components/Home/BannerCounter'
-import CardPreguntas from '../components/Home/CardPreguntas';
+import CardStep from "../components/Home/CardStep";
+import BannerCounter from "../components/Home/BannerCounter";
+import CardPreguntas from "../components/Home/CardPreguntas";
 
 const index = () => {
   const initialState = [
@@ -39,7 +39,7 @@ const index = () => {
             ))}
           </Carousel>
         </div>
-        <div className="section-home">
+        <div className="section-pasos">
           <Container>
             <Row className="step">
               <Col xs={12} sm={3} md={3} lg={3} xl={3}>
@@ -58,36 +58,40 @@ const index = () => {
                 <CardStep />
               </Col>
             </Row>
-            <BannerCounter />
-            <Row className="preguntas">
-              <Col
-                className="align-self-center"
-                xs={12}
-                sm={5}
-                md={5}
-                lg={5}
-                xl={5}
-              >
-                <div className="text-preguntas">
-                  <h5 className="subtitle-first-preguntas">
-                    Preguntas Frecuentes
-                  </h5>
-                  <h3 className="title-preguntas">Informarte es importante</h3>
-                  <h6 className="subtitle-first-preguntas">
-                    Tómate unos minutos para revisar estas preguntas y aclarar
-                    todas tus dudas.
-                  </h6>
-                  <div className="enlace-verMas">
-                    <a href="/">
-                      Ver más <FontAwesomeIcon icon={faArrowRight} />
-                    </a>
+          </Container>
+        </div>
+
+        <div>
+          <BannerCounter />
+
+          <div className="section-preguntas">
+            <Container>
+              <Row>
+                <Col className="align-self-center" xs={12} sm={5} md={4} lg={4} xl={4}>
+                  <div className="text-preguntas">
+                    <h5 className="subtitle-first-preguntas">
+                      Preguntas Frecuentes
+                    </h5>
+                    <h3 className="title-lobtengo">Informarte es importante</h3>
+                    <h6 className="subtitle-first-preguntas">
+                      Tómate unos minutos para revisar estas preguntas y aclarar
+                      todas tus dudas.
+                    </h6>
+                    <div className="enlace-verMas">
+                      <a href="/">
+                        Ver más <FontAwesomeIcon icon={faArrowRight} />
+                      </a>
+                    </div>
                   </div>
-                </div>
-              </Col>
-              <Col xs={12} sm={7} md={7} lg={7} xl={7}>
-                <CardPreguntas />
-              </Col>
-            </Row>
+                </Col>
+                <Col xs={12} sm={7} md={8} lg={8} xl={8}>
+                  <CardPreguntas />
+                </Col>
+              </Row>
+            </Container>
+          </div>
+          <div className="seccion-notaria">
+            {" "}
             <Row className="notaria">
               <Col xs={12} sm={12} md={12} lg={12} xl={12}>
                 <div className="text-notaria">
@@ -109,7 +113,7 @@ const index = () => {
                 </div>
               </Col>
             </Row>
-          </Container>
+          </div>
         </div>
       </div>
       <style jsx>
@@ -121,7 +125,7 @@ const index = () => {
             border-bottom: 1px solid #5a5a5a;
             position: relative;
           }
-          .section-home {
+          .section-pasos {
             position: relative;
           }
           .text-comolobtengo {
@@ -131,12 +135,7 @@ const index = () => {
             padding: 10px 60px;
             text-align: start;
           }
-          .title-lobtengo {
-            font-family: "Baloo-Regular";
-            font-weight: 700;
-            font-size: 2.8rem;
-            color: #3a487f;
-          }
+
           .subtitle-first {
             font-family: "neutra-text-bold";
             color: #878787;
@@ -147,23 +146,14 @@ const index = () => {
             color: #fc6625;
             font-size: 1rem;
           }
-          .btn-participa {
-            background-color: #3a487f;
-            border: none;
-            padding: 7px 10px;
-            color: #ffffff;
-            border-radius: 20px;
-            margin-top: 10px;
-            font-family: "neutra-text-bold";
-          }
+
           .view-mobile {
             display: none;
           }
           .text-preguntas {
             text-align: center;
             font-family: "mont-regular";
-            margin-top: 10rem;
-            padding: 10px 60px;
+            padding: 1rem;
             text-align: start;
           }
           .title-preguntas {
@@ -227,9 +217,9 @@ const index = () => {
             .title-lobtengo {
               font-size: 2rem;
             }
-            .text-comolobtengo{
-              margin-top:1rem;
-              padding:2rem
+            .text-comolobtengo {
+              margin-top: 1rem;
+              padding: 2rem;
             }
           }
         `}

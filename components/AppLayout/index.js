@@ -58,6 +58,35 @@ const index = ({ children }) => {
             color: #878787;
           }
 
+          .btn-participa {
+            background-color: #3a487f;
+            border: none;
+            padding:.7rem .9rem;
+            color: #ffffff;
+            border-radius: 20px;
+            margin-top: 10px;
+            font-family: "neutra-text-bold";
+            display:flex;
+            justify-content:center;
+            align-items:center
+          }
+          .title-lobtengo {
+            font-family: "Baloo-Regular";
+            font-weight: 700;
+            font-size: 2rem;
+            color: #3a487f;
+          }
+          .subtitle-lobtengo {
+            text-align-last: center;
+            font-size: 1.3rem;
+            font-weight: 700;
+            font-family: "neutra-text-bold";
+            color: #3a487f;
+            text-align: start;
+            letter-spacing: 0.01rem;
+            line-height: 1.6rem;
+          }
+
           @media (max-width: 768px) {
             html {
               font-size: 4.6vw !important;

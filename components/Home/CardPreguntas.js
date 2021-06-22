@@ -38,8 +38,8 @@ const CardPreguntas = () => {
   const [preguntas, setPreguntas] = useState(initialState);
 
   return (
-    <Container>
-      <Row className="container-step">
+    <div>
+      <Row >
         {preguntas.map((pregunta) => (
           <>
             <div className="card-step">
@@ -52,7 +52,7 @@ const CardPreguntas = () => {
               </div>
               <Card.Body>
                 <Card.Title>
-                  <div className="card-step-title">{pregunta.title}</div>
+                  <div className="subtitle-lobtengo">{pregunta.title}</div>
                 </Card.Title>
                 <Card.Text>
                   <div className="card-step-description">
@@ -66,37 +66,29 @@ const CardPreguntas = () => {
       </Row>
       <style jsx>
         {`
-          .container-step {
-            display: flex;
-          }
           .card-step {
             text-align: center;
-            padding: 2rem 3rem;
+            padding: 1rem;
             background: #ffffff;
             box-shadow: 2px 2px 13px 2px rgba(0, 0, 0, 0.2);
             border-radius: 20px;
             font-family: "mont-regular" !important;
             width: 40%;
             height: auto;
-            margin: 2rem 2rem;
+            margin: 1rem;
           }
           .card-img {
             margin: auto;
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 40%;
+            width: 4rem;
+            height: 4rem;
           }
-          .card-step-title {
-            text-align-last: center;
-            font-size: 1.8rem;
-            font-weight: 700;
-            font-family: "neutra-text-bold";
-            color: #3a487f;
-            text-align: start;
-            letter-spacing: 0.01rem;
-            line-height: 1.6rem;
+          .card-img img {
+            width: 100%;
           }
+
           .card-step-description {
             font-size: 1rem;
             font-family: "neutra-text-bold";
@@ -108,13 +100,13 @@ const CardPreguntas = () => {
           }
           @media (max-width: 768px) {
             .card-step {
-                width: 100%;
-                margin:1rem 0rem
+              width: 100%;
+              margin: 1rem 0rem;
             }
           }
         `}
       </style>
-    </Container>
+    </div>
   );
 };
 
