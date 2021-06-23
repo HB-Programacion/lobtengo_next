@@ -1,5 +1,5 @@
 import React, { Component, useState } from "react";
-import { Card } from "react-bootstrap";
+import { Card, Container } from "react-bootstrap";
 
 const CardStep = () => {
   const initialState = [
@@ -29,7 +29,7 @@ const CardStep = () => {
   const [banner, setBanner] = useState(initialState);
 
   return (
-    <>
+    <Container>
       <div className="container-step">
         {banner.map((ban) => (
           <div className="card-step">
@@ -42,7 +42,7 @@ const CardStep = () => {
             </div>
             <Card.Body>
               <Card.Title>
-                <div className="card-step-title">{ban.title}</div>
+                <div className="subtitle-lobtengo">{ban.title}</div>
               </Card.Title>
               <Card.Text>
                 <div className="card-step-description">{ban.subtitle}</div>
@@ -53,66 +53,56 @@ const CardStep = () => {
       </div>
       <style jsx>
         {`
-                .container-step{
-                    display: flex;
-                }
-                .card-step {
-                text-align: center;
-                padding: 2rem 1rem;
-                background: #ffffff;
-                box-shadow: 2px 2px 13px 2px rgba(0, 0, 0, 0.2);
-                border-radius: 20px;
-                font-family: "mont-regular" !important;
-                width: 260px;
-                height: auto;
-                margin-bottom: 30px;
-                margin: 8rem 2rem;
-      
-                }
-                .card-img {
-                    margin: auto;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    width: 50%;
-                }
-                .card-step-title {
-                    text-align-last: center;
-                    font-size: 1.8rem;
-                    font-weight: 700;
-                    font-family: "neutra-text-bold";
-                    color: #3A487F;
-                    text-align: start;
-                    letter-spacing:.01rem;
-                    line-height:1.6rem
-                }
-                .card-step-description {
-                    font-size: 1.0rem;
-                    font-family: "neutra-text-bold";
-                    color: #3A487F;
-                    font-weight: 400;
-                    text-align: start;
-                    line-height:1.5rem;
-                    text-align: center;
-                }
+          .container-step {
+            display: flex;
+          }
+          .card-step {
+            text-align: center;
+            padding: 2rem 1rem;
+            background: #ffffff;
+            box-shadow: 2px 2px 13px 2px rgba(0, 0, 0, 0.2);
+            border-radius: 20px;
+            font-family: "mont-regular" !important;
+            width: 20rem;
+            height: auto;
+            margin-bottom: 30px;
+            margin: 8rem 2rem;
+          }
+          .card-img {
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 30%;
+          }
+          
+          .card-step-description {
+            font-size: 1rem;
+            font-family: "neutra-text-bold";
+            color: #3a487f;
+            font-weight: 400;
+            text-align: start;
+            line-height: 1.5rem;
+            text-align: center;
+          }
 
-                @media (max-width: 768px) {
-                    .container-step{
-                    flex-direction: column;
-                    align-items:center
-                }
+          @media (max-width: 768px) {
+            .container-step {
+              flex-direction: column;
+              align-items: center;
+            }
 
-                .card-step {
-                margin: 1rem 0rem;
-                
-                }
-                .card-step-title {
-                    font-size: 1rem;
-                    line-height:1rem
-                }
-            `}
+            .card-step {
+              margin: 1rem 0rem;
+            }
+            .subtitle-lobtengo {
+              font-size: 1rem;
+              line-height: 1rem;
+            }
+          }
+        `}
       </style>
-    </>
+    </Container>
   );
 };
 
