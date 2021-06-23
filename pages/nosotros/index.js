@@ -34,29 +34,6 @@ const index = () => {
             margin-top: 5rem;
           }
 
-          @media (min-width: 1800px) {
-          }
-          @media (min-width: 1024px) {
-            .nosotros-home--subtitle {
-              margin: 2rem auto 0rem !important;
-            }
-          }
-          @media (min-width: 768px) {
-            .nosotros-home--subtitle {
-              margin: 5rem auto 0rem;
-            }
-            .nosotros-home--img img {
-              margin: 3rem auto;
-            }
-            .nosotros-home--descripcion1 {
-              margin-bottom: 3rem !important;
-            }
-          }
-          @media (min-width: 480px) {
-            .nosotros-home--descripcion1 {
-              margin-bottom: 3rem;
-            }
-          }
           @media (min-width: 320px) {
             .nosotros-home {
               width: 80%;
@@ -101,6 +78,31 @@ const index = () => {
               text-align: start;
             }
           }
+
+          @media (min-width: 1800px) {
+          }
+          @media (min-width: 1024px) {
+            .nosotros-home--subtitle {
+              margin: 2rem auto 0rem !important;
+            }
+          }
+          @media (min-width: 768px) {
+            .nosotros-home--subtitle {
+              margin: 5rem auto 0rem;
+            }
+            .nosotros-home--img img {
+              margin: 3rem auto;
+            }
+            .nosotros-home--descripcion1 {
+              margin-bottom: 3rem !important;
+            }
+          }
+          @media (min-width: 480px) {
+            .nosotros-home--descripcion1 {
+              margin-bottom: 3rem;
+            }
+          }
+         
         `}
       </style>
     </AppLayout>

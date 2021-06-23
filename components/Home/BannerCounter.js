@@ -4,7 +4,7 @@ import { Card, Col, Container, Row } from "react-bootstrap";
 const BannerCounter = () => {
   return (
     <>
-      <Container fluid="true">
+      <Container >
         <Row className="justify-content-center">
           <div className="section-counter">
             <Col
@@ -27,13 +27,19 @@ const BannerCounter = () => {
             >
               <div className="graphic-count">
                 <div className="count-days">
-                  <h3>5 días</h3>
+                  <div>5 días</div>
                 </div>
                 <div className="count-time">
                   <Row>
-                    <Col>18h</Col>
-                    <Col>15m</Col>
-                    <Col>6s</Col>
+                    <Col>
+                      <div className="box-number">18h</div>
+                    </Col>
+                    <Col>
+                      <div className="box-number">15m</div>
+                    </Col>
+                    <Col>
+                      <div className="box-number">6s</div>
+                    </Col>
                   </Row>
                 </div>
               </div>
@@ -54,21 +60,24 @@ const BannerCounter = () => {
             </Col>
           </div>
         </Row>
+        <div className="box-btn-right">
+          <button className="btn-participa">PARTICIPA AHORA</button>
+        </div>
       </Container>
       <style jsx>
         {`
           .section-counter {
             display: flex;
             padding: 3rem;
-            width: 80%;
+            width: 100%;
             background-color: #fc6625;
-            margin: 8rem auto;
+            margin: 0rem auto;
             border-radius: 1rem;
           }
           .title-counter {
             font-family: "Baloo-Regular";
             font-weight: 900;
-            font-size: 40px;
+            font-size: 3.1rem;
             color: #ffffff;
           }
           .card-texto {
@@ -101,12 +110,61 @@ const BannerCounter = () => {
           .text-subtitle span {
             color: #fc6625;
           }
+          .count-days {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 1rem auto;
+            background: #3a487f;
+            width: 7rem;
+            height: 7rem;
+            border-radius: 50%;
+          }
+          .count-days div {
+            padding: 1rem;
+            width: 6rem;
+            height: 6rem;
+            background: #ffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            font-size: 1.7rem;
+            line-height: 1.7rem;
+            text-align: center;
+            font-family: "Baloo-Regular";
+            color: #3a487f;
+          }
+          .count-time {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          .box-number {
+            background: #ffff;
+            padding: 0.5rem;
+            width: 3rem;
+            height: 3rem;
+            border-radius: 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-family: "Baloo-Regular";
+            color: #3a487f;
+          }
+          .box-btn-right{
+            display:flex;
+            justify-content:flex-end;
+            margin:1rem 0rem;
+            position: relative
+          }
 
           @media (max-width: 768px) {
             .section-counter {
-            margin: 2rem auto;
-            flex-direction:column
-          }
+              margin: 2rem auto;
+              flex-direction: column;
+            }
           }
         `}
       </style>
