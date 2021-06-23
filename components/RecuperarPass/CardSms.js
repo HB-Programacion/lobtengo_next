@@ -1,12 +1,12 @@
 import React, { Component, useState } from "react";
 import { Card, Col, Container, Row } from "react-bootstrap";
 
-const CardPass = () => {
+const CardSms = () => {
   const initialState = [
     {
       id: 1,
-      title: "Descuida, a todos nos ha pasado",
-      subtitle:"No te preocupes que en pocos minutos podrás restablecer tu contraseña. Por favor,primero selecciona la forma de contacto.",
+      title: "¡Todo listo!",
+      subtitle:"Por favor revisa tus bandejas, busca nuestro correo y haz clic en el enlace para restablecer tu contraseña.",
     }
   ];
 
@@ -25,16 +25,9 @@ const CardPass = () => {
                         <div className="card-pass-description">
                             {pregunta.subtitle}
                         </div>
-                        <div className="checkbox-card">
-                            <div className="check-recuperar">
-                                <input type="checkbox" id="email-pass" name="email-pass" value=""/>
-                                <label for="email-pass">Recuperar mi contraseña por correo electrónico.
-                                </label>
-                            </div>
-                            <div className="check-recuperar">
-                                <input type="checkbox" id="phone-pass" name="phone-pass" value=""/>
-                                <label for="phone-pass">Enviar un SMS a tu número de teléfono.
-                                </label>
+                        <div className="container-email">
+                            <div className="text-email">
+                                Se envió un SMS al XXXXXX958
                             </div>
                         </div>
                         </Card.Text>
@@ -71,20 +64,16 @@ const CardPass = () => {
                     margin: 0.5rem 0rem 0rem;
                     text-align: center;
                 }
-                .checkbox-card{
-                    margin: 1rem;
+                .container-email{
+                    margin-top: 1.5rem;
+                    border: 0.1rem solid #3A487F;
+                    border-radius: 30px;
                 }
-                .check-recuperar{
-                    display: flex;
-                    align-items: start;
-                    margin: 1rem 0rem;
-                }
-                .check-recuperar label {
-                    color: #878787;
-                    font-family: "neutra-text-bold";
-                    margin-top: -0.4rem;
-                    text-align: start;
-                    margin-left: 0.5rem;
+                .text-email{
+                    font-size: 0.9rem;
+                    font-family: 'neutra-text-bold';
+                    padding: 0.5rem 0rem;
+                    color: #3A487F;
                 }
                 @media (max-width: 768px) {
                     .card-pass {
@@ -98,4 +87,4 @@ const CardPass = () => {
     );
 };
 
-export default CardPass;
+export default CardSms;

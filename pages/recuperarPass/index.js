@@ -3,6 +3,8 @@ import Image from "next/image";
 import { Carousel } from "react-bootstrap";
 import AppLayout from "../../components/AppLayout";
 import CardPass from '../../components/RecuperarPass/CardPass'
+import CardCorreo from "../../components/RecuperarPass/CardCorreo";
+import CardSms from "../../components/RecuperarPass/CardSms";
 
 
 const index = () => {
@@ -15,6 +17,8 @@ const index = () => {
                 </div>
                 <div className="container-card">
                     <CardPass/>
+                    <CardCorreo/>
+                    <CardSms/>
                 </div>
             </div>
             <style jsx>
