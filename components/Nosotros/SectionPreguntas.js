@@ -31,40 +31,23 @@ const SectionPreguntas = () => {
                         text-align: center;
                     }
 
-                body {
-                margin-top: 5rem;
-                }
-
-                @media (min-width:1800px) {
-
-                }
-                @media (min-width:1024px) {
-
-                }
-                @media (min-width:768px) {
-
-                }
-                @media (min-width:480px) {
-
-                }
-                @media (min-width:320px) {
                     .nosotros-preguntas--title1{
                         font-size: 20px;
                         font-family: "neutra-text-bold";
                         color: #3A487F;
                         text-align: center;
-                        margin: 5rem auto;
+                        margin: 1rem auto;
                         text-decoration: underline;
                         font-weight: 700;
                     }
                     .nosotros-preguntas--img img{
-                        margin: 10rem auto;
-                        width: 60%;
+                        margin: 2rem auto;
+                        width: 70%;
                     }
                     .nosotros-preguntas--subtitle{
                         color: #878787;
                         font-family: 'Baloo-Regular';
-                        font-size: 15px;
+                        font-size: 20px;
                         font-weight: 600;
                         margin: 0rem auto;
                         text-align: center;
@@ -72,25 +55,28 @@ const SectionPreguntas = () => {
                     .nosotros-preguntas--title{
                         color: #3A487F;
                         font-family: 'Baloo-Regular';
-                        font-size: 25px;
+                        font-size: 30px;
                         text-align: center;
                         font-weight: 800;
-                        margin: 0rem 8rem;
+                        margin: 0rem 1rem;
                     }
                     .nosotros-home--descripcion1{
                         font-family: "neutra-text-bold";
                         color: #878787;
-                        font-size: 15px;
+                        font-size: 20px;
                         text-align: start;
-                        margin: 25px 50px;
+                        margin: 0rem 1rem;
                         text-align: start;
+                    }
+                    .nosotros-preguntas--lista ul{
+                        padding-left: 1rem;
                     }
                     .nosotros-preguntas--lista li{
                         font-family: "neutra-text-bold";
                         color: #878787;
                         font-size: 18px;
                         text-align: start;
-                        margin: 20px 40px;
+                        margin: 1rem 0rem;
                         list-style: none;
                     }
                     .nosotros-preguntas--lista span{
@@ -99,9 +85,9 @@ const SectionPreguntas = () => {
                     .nosotros-home--descripcion2{
                         font-family: "neutra-text-bold";
                         color: #878787;
-                        font-size: 15px;
+                        font-size: 20px;
                         text-align: start;
-                        margin: 25px 50px;
+                        margin: 1.5rem 1rem;
                         text-align: start;
                     }
                     .nosotros-home--descripcion2 span{
@@ -120,6 +106,20 @@ const SectionPreguntas = () => {
                         margin: 10px 0px 100px 0px;
                         font-family: "neutra-text-bold";
                     }
+                @media (min-width:1800px) {
+
+                }
+                @media (min-width:1024px) {
+
+                }
+                @media (min-width:768px) {
+                    
+                }
+                @media (min-width:480px) {
+
+                }
+                @media (min-width:320px) {
+                    
                 }
                 `}
             </style>

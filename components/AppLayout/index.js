@@ -32,7 +32,7 @@ const index = ({ children }) => {
       <style jsx global>
         {`
           html {
-            font-size: 0.98vw !important;
+            font-family:62.5%;
             font-family: "mont-heavy";
           }
           @font-face {

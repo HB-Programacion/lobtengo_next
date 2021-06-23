@@ -1,4 +1,5 @@
 import React, { Component, useState } from "react";
+import Image from "next/image";
 import { Card, Col, Container, Row } from "react-bootstrap";
 
 const CardNosotros = () => {
@@ -26,11 +27,15 @@ const CardNosotros = () => {
 
   return (
     <>
-      <div className="nosotros-card">
+      <Row className="container-nosotros">
         {preguntas.map((pregunta) => (
           <div className="card-nosotros">
-            <div className="card-img">
-              <Card.Img variant="top" src={pregunta.image} />
+            <div className="nosotros-card-img">
+              <Card.Img
+                variant="top"
+                src={pregunta.image}
+                alt="imagen nosotros"
+              />
             </div>
             <Card.Body>
               <Card.Title>
@@ -39,52 +44,36 @@ const CardNosotros = () => {
             </Card.Body>
           </div>
         ))}
-      </div>
+      </Row>
       <style jsx>
         {`
-          .nosotros-card {
-            margin: 10rem auto;
-            text-align: -webkit-center;
+          .container-nosotros{
+            display: flex;
+            place-content: center;
           }
-
-          body {
-            margin-top: 5rem;
+          .card-nosotros {
+            text-align: center;
+            padding: 1rem 1.5rem;
+            background: #ffffff;
+            box-shadow: 2px 2px 13px 2px rgb(0 0 0 / 20%);
+            border-radius: 20px;
+            font-family: "mont-regular" !important;
+            width: 73%;
+            height: auto;
+            margin: 2rem 2rem;
           }
-
-          @media (min-width: 1800px) {
+          .nosotros-card-img {
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 15%;
           }
-          @media (min-width: 1024px) {
-          }
-          @media (min-width: 768px) {
-          }
-          @media (min-width: 480px) {
-          }
-          @media (min-width: 320px) {
-            .card-nosotros {
-              padding: 2rem 9rem;
-              background: #ffffff;
-              box-shadow: 2px 2px 13px 2px rgba(0, 0, 0, 0.2);
-              border-radius: 20px;
-              font-family: "mont-regular" !important;
-              width: 70%;
-              height: auto;
-              margin: 8rem auto;
-              padding: 10rem 10rem;
-              min-height: 180px;
-            }
-            .card-img {
-              margin: auto;
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              width: 20%;
-            }
-            .card-nosotros-title {
-              font-size: 20px;
-              font-weight: 700;
-              font-family: "neutra-text-bold";
-              color: #3a487f;
-            }
+          .card-nosotros-title {
+            font-size: 22px;
+            font-weight: 700;
+            font-family: "neutra-text-bold";
+            color: #3a487f;
           }
         `}
       </style>
