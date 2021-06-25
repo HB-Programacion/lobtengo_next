@@ -39,7 +39,7 @@ const CardPreguntas = () => {
 
   return (
     <div>
-      <Row >
+      <Row>
         {preguntas.map((pregunta) => (
           <>
             <div className="card-step">
@@ -55,7 +55,7 @@ const CardPreguntas = () => {
                   <div className="subtitle-lobtengo">{pregunta.title}</div>
                 </Card.Title>
                 <Card.Text>
-                  <div className="card-step-description">
+                  <div className="text-description-blue">
                     {pregunta.subtitle}
                   </div>
                 </Card.Text>
@@ -89,15 +89,6 @@ const CardPreguntas = () => {
             width: 100%;
           }
 
-          .card-step-description {
-            font-size: 1rem;
-            font-family: "neutra-text-bold";
-            color: #3a487f;
-            font-weight: 400;
-            text-align: start;
-            line-height: 1.5rem;
-            text-align: center;
-          }
           @media (max-width: 768px) {
             .card-step {
               width: 100%;

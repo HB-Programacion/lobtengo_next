@@ -61,14 +61,15 @@ const index = ({ children }) => {
           .btn-participa {
             background-color: #3a487f;
             border: none;
-            padding:.7rem .9rem;
+            padding:.6rem .9rem;
             color: #ffffff;
             border-radius: 20px;
             margin-top: 10px;
             font-family: "neutra-text-bold";
             display:flex;
             justify-content:center;
-            align-items:center
+            align-items:center;
+            font-size:.75rem
           }
           .title-lobtengo {
             font-family: "Baloo-Regular";
@@ -85,6 +86,27 @@ const index = ({ children }) => {
             text-align: start;
             letter-spacing: 0.01rem;
             line-height: 1.6rem;
+          }
+
+          .text-description-blue {
+            font-size: 0.8rem;
+            font-family: "neutra-text-bold";
+            color: #3a487f;
+            font-weight: 400;
+            text-align: start;
+            line-height: 1rem;
+            text-align: center;
+          }
+           .subtitle-gray {
+            font-family: "neutra-text-bold";
+            color: #878787;
+            font-size: 1.3rem;
+          }
+
+          .subtitle-orange {
+            font-family: "neutra-text-bold";
+            color: #fc6625;
+            font-size: 1.3rem;
           }
 
           @media (max-width: 768px) {

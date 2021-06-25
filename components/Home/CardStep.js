@@ -45,7 +45,7 @@ const CardStep = () => {
                 <div className="subtitle-lobtengo">{ban.title}</div>
               </Card.Title>
               <Card.Text>
-                <div className="card-step-description">{ban.subtitle}</div>
+                <div className="text-description-blue">{ban.subtitle}</div>
               </Card.Text>
             </Card.Body>
           </div>
@@ -66,7 +66,7 @@ const CardStep = () => {
             width: 20rem;
             height: auto;
             margin-bottom: 30px;
-            margin: 8rem 2rem;
+            margin: 6rem .5rem;
           }
           .card-img {
             margin: auto;
@@ -76,21 +76,12 @@ const CardStep = () => {
             width: 30%;
           }
           
-          .card-step-description {
-            font-size: 1rem;
-            font-family: "neutra-text-bold";
-            color: #3a487f;
-            font-weight: 400;
-            text-align: start;
-            line-height: 1.5rem;
-            text-align: center;
-          }
+       
 
           @media (max-width: 768px) {
             .container-step {
-              flex-direction: column;
-              align-items: center;
-            }
+            flex-direction:column
+          }
 
             .card-step {
               margin: 1rem 0rem;
