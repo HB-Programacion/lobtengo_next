@@ -1,5 +1,5 @@
 import React, { Component, useState } from "react";
-import { Card, Col, Container, Row } from "react-bootstrap";
+import { Card, Row } from "react-bootstrap";
 
 const CardSms = () => {
   const initialState = [

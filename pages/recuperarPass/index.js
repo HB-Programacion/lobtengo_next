@@ -5,6 +5,8 @@ import AppLayout from "../../components/AppLayout";
 import CardPass from '../../components/RecuperarPass/CardPass'
 import CardCorreo from "../../components/RecuperarPass/CardCorreo";
 import CardSms from "../../components/RecuperarPass/CardSms";
+import CardNewPass from "../../components/RecuperarPass/CardNewPass";
+import CardGracias from "../../components/RecuperarPass/CardGracias";
 
 
 const index = () => {
@@ -17,8 +19,10 @@ const index = () => {
                 </div>
                 <div className="container-card">
                     <CardPass/>
-                    <CardCorreo/>
+                    {/* <CardCorreo/>
                     <CardSms/>
+                    <CardNewPass/>
+                    <CardGracias/> */}
                 </div>
             </div>
             <style jsx>
