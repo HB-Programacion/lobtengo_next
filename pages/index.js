@@ -43,16 +43,18 @@ const index = () => {
           <Container>
             <Row className="step">
               <Col xs={12} sm={3} md={3} lg={3} xl={3}>
-                <div className="text-comolobtengo">
-                  <h3 className="title-lobtengo">¿Cómo Lobtengo?</h3>
-                  <h6 className="subtitle-first">
-                    Participar del sorteo es muy simple.
-                  </h6>
-                  <h6 className="subtitle-second">
-                    ¡Solo son 3 pasos y listo!
-                  </h6>
-                  <button className="btn-participa">PARTICIPA AHORA</button>
-                </div>
+               
+                  <div className="text-comolobtengo">
+                    <h3 className="title-lobtengo">¿Cómo Lobtengo?</h3>
+                    <h6 className="subtitle-gray">
+                      Participar del sorteo es muy simple.
+                    </h6>
+                    <h6 className="subtitle-orange">
+                      ¡Solo son 3 pasos y listo!
+                    </h6>
+                    <button className="btn-participa">PARTICIPA AHORA</button>
+                  </div>
+              
               </Col>
               <Col xs={12} sm={9} md={9} lg={9} xl={9}>
                 <CardStep />
@@ -67,13 +69,20 @@ const index = () => {
           <div className="section-preguntas">
             <Container>
               <Row>
-                <Col className="align-self-center" xs={12} sm={5} md={4} lg={4} xl={4}>
+                <Col
+                  className="align-self-center"
+                  xs={12}
+                  sm={5}
+                  md={4}
+                  lg={4}
+                  xl={4}
+                >
                   <div className="text-preguntas">
-                    <h5 className="subtitle-first-preguntas">
+                    <h5 className="subtitle-gray">
                       Preguntas Frecuentes
                     </h5>
                     <h3 className="title-lobtengo">Informarte es importante</h3>
-                    <h6 className="subtitle-first-preguntas">
+                    <h6 className=" subtitle-gray">
                       Tómate unos minutos para revisar estas preguntas y aclarar
                       todas tus dudas.
                     </h6>
@@ -95,13 +104,13 @@ const index = () => {
             <Row className="notaria">
               <Col xs={12} sm={12} md={12} lg={12} xl={12}>
                 <div className="text-notaria">
-                  <h5 className="subtitle-second-notaria">
+                  <h5 className="subtitle-gray ">
                     Tranquilo, tenemos total respaldo
                   </h5>
-                  <h3 className="title-notaria">
+                  <h3 className="title-lobtengo">
                     Notaría Aramburú y asociados
                   </h3>
-                  <h6 className="subtitle-first-notaria">
+                  <h6 className="subtitle-gray ">
                     Nuestro sorteo cuenta con la supervisión de la Notaria
                     Aramburú y Asociados.
                   </h6>
@@ -128,23 +137,17 @@ const index = () => {
           .section-pasos {
             position: relative;
           }
+
+          :global(.step.row){
+            display: flex;
+            justify-content: center;
+            align-items: center!important;
+          }
           .text-comolobtengo {
             text-align: center;
             font-family: "mont-regular";
-            margin-top: 10rem;
-            padding: 10px 60px;
+            padding: 10px 20px;
             text-align: start;
-          }
-
-          .subtitle-first {
-            font-family: "neutra-text-bold";
-            color: #878787;
-            font-size: 1rem;
-          }
-          .subtitle-second {
-            font-family: "neutra-text-bold";
-            color: #fc6625;
-            font-size: 1rem;
           }
 
           .view-mobile {
@@ -156,22 +159,7 @@ const index = () => {
             padding: 1rem;
             text-align: start;
           }
-          .title-preguntas {
-            font-family: "Baloo-Regular";
-            font-weight: 700;
-            font-size: 2.3rem;
-            color: #3a487f;
-          }
-          .subtitle-first-preguntas {
-            font-family: "neutra-text-bold";
-            color: #878787;
-            font-size: 1.5rem;
-          }
-          .subtitle-second-preguntas {
-            font-family: "Baloo-Regular";
-            color: #878787;
-            font-size: 1.5rem;
-          }
+       
           .enlace-verMas a {
             color: #3a487f;
             font-family: "neutra-text-bold";
@@ -187,25 +175,11 @@ const index = () => {
             color: #878787;
             font-size: 1.6rem;
           }
-          .title-notaria {
-            font-family: "Baloo-Regular";
-            font-weight: 700;
-            font-size: 2.5rem;
-            color: #3a487f;
-          }
-          .subtitle-first-notaria {
-            font-family: "Baloo-Regular";
-            color: #878787;
-            font-size: 1.5rem;
-          }
+     
           .text-notaria img {
             margin: 2rem auto;
           }
-          .descripcion-notaria {
-            font-family: "neutra-text-light";
-            color: #878787;
-            font-size: 1rem;
-          }
+       
           .descripcion-notaria a {
             color: #fc6625;
             text-decoration: none;
