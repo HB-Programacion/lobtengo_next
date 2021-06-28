@@ -14,7 +14,7 @@ const CardNewPass = () => {
 
     return (
         <>
-            <Row className="row-pass-card">
+            <div className="row-pass-card">
                 {preguntas.map((pregunta) => (
                     <div className="card-pass">
                         <Card.Body>
@@ -24,12 +24,12 @@ const CardNewPass = () => {
                             <Card.Text>
                                 <form>
                                     <div className="form-row">
-                                        <div className="form-group col-100">
+                                        <div className="form-group">
                                             <input type="password" className="form-control styleInput" id="inputpass1" placeholder="Nueva contraseña"/>
                                         </div>
                                     </div>
                                     <div className="form-row">
-                                        <div className="form-group col-100">
+                                        <div className="form-group">
                                             <input type="password" className="form-control styleInput" id="inputpass2" placeholder="Confirmar contraseña"/>
                                         </div>
                                     </div>
@@ -43,11 +43,11 @@ const CardNewPass = () => {
                         </Card.Body>
                     </div>
                 ))}
-            </Row>
+            </div>
             <style jsx>
                 {`
                     .row-pass-card {
-                        width: 70%;
+                        width: 95%;
                     }
                     .card-pass {
                         background: #ffffff;
@@ -69,7 +69,7 @@ const CardNewPass = () => {
                     }
                     .btn-restablecer {
                         background-color: #3A487F;
-                        font-size: 15px;
+                        font-size: 1rem;
                         border: none;
                         padding: 1rem 2.5rem;
                         color: #ffffff;
@@ -86,11 +86,13 @@ const CardNewPass = () => {
                         margin: 0.5rem 0rem;
                         font-family: 'neutra-text-bold';
                     }
-                    @media (max-width: 768px) {
+                    @media (min-width: 768px) {
                         .card-pass {
-                            width: 100%;
-                            margin:1rem 0rem
+                            max-width: 25rem;
                         }
+                        .row-pass-card {
+                            justify-content: center;
+                    }
                     }
             `}
             </style>

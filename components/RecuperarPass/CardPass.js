@@ -37,6 +37,11 @@ const CardPass = () => {
                                 </label>
                             </div>
                         </div>
+                        <div className="container-btn">
+                            <button type="submit" className="btn-siguiente">
+                                Siguiente
+                            </button>
+                        </div>
                         </Card.Text>
                     </Card.Body>
                 </div>
@@ -56,7 +61,7 @@ const CardPass = () => {
                     padding: 1.5rem 0rem 1rem;
                 }
                 .card-pass-title {
-                    font-size: 1.2rem;
+                    font-size: 1rem;
                     font-weight: 700;
                     font-family: "neutra-text-bold";
                     color: #3a487f;
@@ -78,6 +83,20 @@ const CardPass = () => {
                     display: flex;
                     align-items: start;
                     margin: 1rem 0rem;
+                }
+                .container-btn{
+                        margin-top: 1.2rem;
+                    }
+                .btn-siguiente {
+                    background-color: #3A487F;
+                    font-size: 1rem;
+                    border: none;
+                    padding: 1rem 2.5rem;
+                    color: #ffffff;
+                    border-radius: 40px;
+                    margin: 0rem 0.5rem 0rem 1rem;
+                    font-family: "neutra-text-bold";
+                    text-transform: uppercase;
                 }
                 .check-recuperar label {
                     color: #878787;

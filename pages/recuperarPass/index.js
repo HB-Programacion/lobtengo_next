@@ -19,10 +19,10 @@ const index = () => {
                 </div>
                 <div className="container-card">
                     <CardPass/>
-                    {/* <CardCorreo/>
+                    <CardCorreo/>
                     <CardSms/>
                     <CardNewPass/>
-                    <CardGracias/> */}
+                    <CardGracias/>
                 </div>
             </div>
             <style jsx>
@@ -36,16 +36,6 @@ const index = () => {
                 }
                 .avatar{
                     margin: 6rem 0rem 1.5rem 0rem
-                }
-                @media (min-width: 1800px) {
-                }
-                @media (min-width: 1024px) {
-                }
-                @media (min-width: 768px) {
-                }
-                @media (min-width: 480px) {
-                }
-                @media (min-width: 320px) {
                 }
             `}
             </style>

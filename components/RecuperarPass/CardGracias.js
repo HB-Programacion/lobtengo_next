@@ -15,7 +15,7 @@ const CardGracias = () => {
 
     return (
         <>
-            <Row className="row-pass-card">
+            <div className="row-pass-card">
                 {preguntas.map((pregunta) => (
                     <div className="card-pass">
                         <Card.Body>
@@ -28,7 +28,7 @@ const CardGracias = () => {
                             </div>
                                 <form>
                                     <div className="form-row">
-                                        <div className="form-group col-100">
+                                        <div className="form-group">
                                             <input type="text" className="form-control styleInput" id="inputpass1" placeholder=""/>
                                         </div>
                                     </div>
@@ -42,11 +42,11 @@ const CardGracias = () => {
                         </Card.Body>
                     </div>
                 ))}
-            </Row>
+            </div>
             <style jsx>
                 {`
                     .row-pass-card {
-                        width: 70%;
+                        width: 95%;
                     }
                     .card-pass {
                         background: #ffffff;
@@ -95,10 +95,12 @@ const CardGracias = () => {
                         margin: 0.5rem 0rem;
                         font-family: 'neutra-text-bold';
                     }
-                    @media (max-width: 768px) {
+                    @media (min-width: 768px) {
                         .card-pass {
-                            width: 100%;
-                            margin:1rem 0rem
+                            max-width: 25rem;
+                        }
+                        .row-pass-card {
+                            justify-content: center;
                         }
                     }
             `}

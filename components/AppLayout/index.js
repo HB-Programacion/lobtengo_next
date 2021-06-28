@@ -17,7 +17,8 @@ const index = ({ children }) => {
   return (
     <div>
       <Head>
-        <title>lobtengo</title>
+        <link rel="shortcut icon" href="/icons/home/lobtengo.svg" />
+        <title>Lobtengo</title>
         <meta name="description" content="esto es descripcion"></meta>
       </Head>
       <Header

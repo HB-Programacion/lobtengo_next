@@ -14,7 +14,7 @@ const CardCorreo = () => {
 
   return (
     <>
-        <Row className="row-pass-card">
+        <div className="row-pass-card">
             {preguntas.map((pregunta) => (
                 <div className="card-pass">
                     <Card.Body>
@@ -34,11 +34,11 @@ const CardCorreo = () => {
                     </Card.Body>
                 </div>
             ))}
-        </Row>
+        </div>
         <style jsx>
             {`
                 .row-pass-card {
-                    width: 70%;
+                    width: 95%;
                 }
                 .card-pass {
                     background: #ffffff;
@@ -75,10 +75,12 @@ const CardCorreo = () => {
                     padding: 0.5rem 0rem;
                     color: #3A487F;
                 }
-                @media (max-width: 768px) {
+                @media (min-width: 768px) {
                     .card-pass {
-                        width: 100%;
-                        margin:1rem 0rem
+                        max-width: 25rem;
+                    }
+                    .row-pass-card {
+                        justify-content: center;
                     }
                 }
         `}

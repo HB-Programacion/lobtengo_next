@@ -14,7 +14,7 @@ const CardSms = () => {
 
   return (
     <>
-        <Row className="row-pass-card">
+        <div className="row-pass-card">
             {preguntas.map((pregunta) => (
                 <div className="card-pass">
                     <Card.Body>
@@ -30,15 +30,20 @@ const CardSms = () => {
                                 Se envió un SMS al XXXXXX958
                             </div>
                         </div>
+                        <div className="container-btn">
+                            <button type="submit" className="btn-siguiente">
+                                Siguiente
+                            </button>
+                        </div>
                         </Card.Text>
                     </Card.Body>
                 </div>
             ))}
-        </Row>
+        </div>
         <style jsx>
             {`
                 .row-pass-card {
-                    width: 70%;
+                    width: 95%;
                 }
                 .card-pass {
                     background: #ffffff;
@@ -64,6 +69,20 @@ const CardSms = () => {
                     margin: 0.5rem 0rem 0rem;
                     text-align: center;
                 }
+                .container-btn{
+                        margin-top: 1.2rem;
+                    }
+                .btn-siguiente {
+                    background-color: #3A487F;
+                    font-size: 15px;
+                    border: none;
+                    padding: 1rem 2.5rem;
+                    color: #ffffff;
+                    border-radius: 40px;
+                    margin: 0rem 0.5rem 0rem 1rem;
+                    font-family: "neutra-text-bold";
+                    text-transform: uppercase;
+                }
                 .container-email{
                     margin-top: 1.5rem;
                     border: 0.1rem solid #3A487F;
@@ -75,10 +94,12 @@ const CardSms = () => {
                     padding: 0.5rem 0rem;
                     color: #3A487F;
                 }
-                @media (max-width: 768px) {
+                @media (min-width: 768px) {
                     .card-pass {
-                        width: 100%;
-                        margin:1rem 0rem
+                        max-width: 25rem;
+                    }
+                    .row-pass-card {
+                        justify-content: center;
                     }
                 }
         `}
