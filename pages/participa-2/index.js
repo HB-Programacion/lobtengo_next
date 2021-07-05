@@ -92,9 +92,6 @@ const index = () => {
                         font-weight: 800;
                         margin: 0.5rem 1.5rem 1.5rem;
                     }
-                    .container-card{
-                        display: flex;
-                    }
                     .participa-home--descripcion2 {
                         color: #878787;
                         font-family: "neutra-text-bold";
@@ -144,7 +141,7 @@ const index = () => {
                         margin: 0rem 1.5rem 5rem;
                         align-items: center;
                     }
-                    participa-seguro---text{
+                    .participa-seguro---text{
                         color: #808080;
                         font-family: 'Baloo 2';
                         font-size: 0.8rem;
