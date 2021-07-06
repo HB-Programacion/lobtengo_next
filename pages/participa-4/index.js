@@ -23,8 +23,32 @@ const index = () => {
                         Guardamos tus tickets durante 15 minutos.
                     </div>
                 </div>
-                <div className="participa4-tickets">
+                <div className="participa4-card-tickets">
                     <CardTickets/>
+                </div>
+                <div className="participa4-cupon">
+                    <div className="participa4-cupon--texto">¿Tienes un cupón de descuento?</div>
+                    <input
+                        type="text"
+                        className="form-control styleInput"
+                        id="inputEmail4"
+                        placeholder="Ingresa tu código de descuento"
+                    />
+                </div>
+                <div className="participa4-metodo">
+                    <div className="participa4-metodo--texto">Selecciona tu método de pago</div>
+                        <input
+                            type="text"
+                            className="form-control styleInput"
+                            id="inputEmail4"
+                            placeholder="Pagar con tarjeta"
+                        />
+                        <input
+                            type="text"
+                            className="form-control styleInput"
+                            id="inputEmail4"
+                            placeholder="Pagar con Paypal"
+                        />
                 </div>
                 <div className="participa4-seguro">
                     <img src="/icons/participa/mayor.svg" alt="18" />
@@ -120,6 +144,26 @@ const index = () => {
                         color: #3A487F;
                         font-size: 1rem;
                         margin: 1rem 4rem;
+                    }
+                    .styleInput {
+                        border-radius: 25px;
+                        background-color: #e9ebf1;
+                        border: none;
+                        padding: 0.5rem 1rem;
+                        margin: 0.5rem 0rem 2rem;
+                        font-family: "neutra-text-bold";
+                    }
+                    .participa4-cupon--texto{
+                        color: #878787;
+                        text-align: start;
+                        font-family: 'neutra-text-bold';
+                        font-size: 1rem;
+                    }
+                    .participa4-metodo--texto{
+                        color: #878787;
+                        text-align: start;
+                        font-family: 'neutra-text-bold';
+                        font-size: 1rem;
                     }
                     @media (min-width: 768px) {
                         .participa4-home--title{
