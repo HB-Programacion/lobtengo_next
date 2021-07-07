@@ -136,7 +136,7 @@ const CardTickets = () => {
             .tickets-total-precio span{
                 font-size: 1rem;
             }
-            @media (max-width: 768px) {
+            @media (min-width: 768px) {
                 .card-tickets {
                 width: 100%;
                 margin: 1rem 0rem;
