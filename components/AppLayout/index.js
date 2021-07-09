@@ -70,13 +70,20 @@ const index = ({ children }) => {
             display:flex;
             justify-content:center;
             align-items:center;
-            font-size:.75rem
+            font-size:.75rem;
+            text-transform: uppercase;
           }
-          .title-lobtengo {
+          .title-lobtengo-blue {
             font-family: "Baloo-Regular";
             font-weight: 700;
-            font-size: 2rem;
+            font-size: 1.8rem;
             color: #3a487f;
+          }
+          .title-lobtengo-orange {
+            font-family: "Baloo-Regular";
+            font-weight: 700;
+            font-size: 1.8rem;
+            color: #fc6625;
           }
           .subtitle-lobtengo {
             text-align-last: center;
@@ -88,26 +95,57 @@ const index = ({ children }) => {
             letter-spacing: 0.01rem;
             line-height: 1.6rem;
           }
+          .centerText{
+            text-align: center;
+            margin: 0rem 0.8rem;
+          }
 
           .text-description-blue {
-            font-size: 0.8rem;
+            font-size: 1rem;
             font-family: "neutra-text-bold";
             color: #3a487f;
             font-weight: 400;
             text-align: start;
             line-height: 1rem;
-            text-align: center;
+            text-align: justify;
+            margin: 1rem;
           }
-           .subtitle-gray {
+          .text-description-gray{
+            font-size: 1rem;
             font-family: "neutra-text-bold";
             color: #878787;
-            font-size: 1.3rem;
+            font-weight: 400;
+            text-align: start;
+            line-height: 1rem;
+            text-align: justify;
+            margin: 1rem;
           }
-
+           .subtitle-gray {
+            font-family: 'neutra-text-bold';
+            color: #878787;
+            font-size: 1rem;
+            text-align: center;
+            margin: 0rem 3rem;
+          }
+          .subtitle-blue {
+            font-family: 'neutra-text-bold';
+            color: #3a487f;
+            font-size: 1rem;
+            margin: 0rem 3rem;
+            text-align: center;
+          }
           .subtitle-orange {
-            font-family: "neutra-text-bold";
+            font-family: 'neutra-text-bold';
             color: #fc6625;
-            font-size: 1.3rem;
+            font-size: 1rem;
+            margin: 0rem 3rem;
+            text-align: center;
+          }
+          .subtitle-orange2 {
+            font-family: 'neutra-text-bold';
+            color: #fc6625;
+            font-size: 0.8rem;
+            margin: 0rem 3rem;
           }
 
           @media (max-width: 768px) {
