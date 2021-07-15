@@ -45,7 +45,7 @@ const index = () => {
               <Col xs={12} sm={3} md={3} lg={3} xl={3}>
                
                   <div className="text-comolobtengo">
-                    <h3 className="title-lobtengo">¿Cómo Lobtengo?</h3>
+                    <h3 className="title-lobtengo-blue">¿Cómo Lobtengo?</h3>
                     <h6 className="subtitle-gray">
                       Participar del sorteo es muy simple.
                     </h6>
@@ -81,7 +81,7 @@ const index = () => {
                     <h5 className="subtitle-gray">
                       Preguntas Frecuentes
                     </h5>
-                    <h3 className="title-lobtengo">Informarte es importante</h3>
+                    <h3 className="title-lobtengo-blue">Informarte es importante</h3>
                     <h6 className=" subtitle-gray">
                       Tómate unos minutos para revisar estas preguntas y aclarar
                       todas tus dudas.

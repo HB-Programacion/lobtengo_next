@@ -63,10 +63,10 @@ const CardStep = () => {
             box-shadow: 2px 2px 13px 2px rgba(0, 0, 0, 0.2);
             border-radius: 20px;
             font-family: "mont-regular" !important;
-            width: 20rem;
+            width: 18rem;
             height: auto;
             margin-bottom: 30px;
-            margin: 6rem .5rem;
+            margin: 6rem 0.5rem;
           }
           .card-img {
             margin: auto;
@@ -75,13 +75,11 @@ const CardStep = () => {
             align-items: center;
             width: 30%;
           }
-          
-       
 
           @media (max-width: 768px) {
             .container-step {
-            flex-direction:column
-          }
+              flex-direction: column;
+            }
 
             .card-step {
               margin: 1rem 0rem;
