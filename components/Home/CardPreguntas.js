@@ -38,7 +38,7 @@ const CardPreguntas = () => {
   const [preguntas, setPreguntas] = useState(initialState);
 
   return (
-    <div>
+    <Container>
       <Row>
         {preguntas.map((pregunta) => (
           <>
@@ -73,7 +73,7 @@ const CardPreguntas = () => {
             box-shadow: 2px 2px 13px 2px rgba(0, 0, 0, 0.2);
             border-radius: 20px;
             font-family: "mont-regular" !important;
-            width: 75%;
+            width: 18rem;
             height: auto;
             margin: 1rem auto;
           }
@@ -98,15 +98,11 @@ const CardPreguntas = () => {
             text-align: center;
           }
 
-          @media (min-width: 768px) {
-            .card-step {
-              width: 100%;
-              margin: 1rem 0rem;
-            }
+        
           }
         `}
       </style>
-    </div>
+    </Container>
   );
 };
 

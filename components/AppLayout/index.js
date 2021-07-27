@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Head from "next/head";
 import Header from "../Header/Header";
 import HeaderMobile from "../Header/HeaderMobile";
+import Footer from "../Footer/Footer";
 
 const index = ({ children }) => {
   const [menuBurgerOpen, setmenuBurgerOpen] = useState(false);
@@ -30,6 +31,7 @@ const index = ({ children }) => {
         ocultarMenuMobile={ocultarMenuMobile}
       />
       <main>{children}</main>
+      <Footer/>
       <style jsx global>
         {`
           html {
@@ -107,7 +109,7 @@ const index = ({ children }) => {
             font-weight: 400;
             text-align: start;
             line-height: 1rem;
-            text-align: justify;
+            text-align: center;
             margin: 1rem;
           }
           .text-description-gray{
