@@ -57,7 +57,7 @@ const index = () => {
               
               </Col>
               <Col xs={12} sm={9} md={9} lg={9} xl={9}>
-                <CardStep />
+                {/* <CardStep /> */}
               </Col>
             </Row>
           </Container>

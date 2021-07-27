@@ -73,9 +73,9 @@ const CardPreguntas = () => {
             box-shadow: 2px 2px 13px 2px rgba(0, 0, 0, 0.2);
             border-radius: 20px;
             font-family: "mont-regular" !important;
-            width: 40%;
+            width: 75%;
             height: auto;
-            margin: 1rem;
+            margin: 1rem auto;
           }
           .card-img {
             margin: auto;
@@ -88,8 +88,17 @@ const CardPreguntas = () => {
           .card-img img {
             width: 100%;
           }
+          .card-body{
+            padding: 1rem 0.5rem !important ; 
+          }
+          .subtitle-lobtengo{
+            text-align: center;
+          }
+          .text-description-blue{
+            text-align: center;
+          }
 
-          @media (max-width: 768px) {
+          @media (min-width: 768px) {
             .card-step {
               width: 100%;
               margin: 1rem 0rem;
