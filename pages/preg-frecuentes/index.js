@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import AppLayout from '../../components/AppLayout';
 import CardPreguntas from '../../components/Home/CardPreguntas';
+import CollapsePregFrec from '../../components/PregFrecuentes/CollapsePregFrec';
 
 const index = () => {
 
@@ -15,8 +16,8 @@ const index = () => {
                     <div className="text-title title-lobtengo-blue">Sabemos que parece demasiado bueno para ser verdad</div>
                     <div className="text-subtitle2 text-description-gray">Descuida, si aún te quedan dudas, <span>hemos hecho un listado</span> de las principales preguntas frecuentes.</div>
                 </div>
-
-                {/* <CardPreguntas/> */}
+                <CardPreguntas/>
+                {/* <CollapsePregFrec/> */}
             </div>
             <style jsx>
                 {`

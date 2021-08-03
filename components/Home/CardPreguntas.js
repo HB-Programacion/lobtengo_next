@@ -75,7 +75,7 @@ const CardPreguntas = () => {
             font-family: "mont-regular" !important;
             width: 18rem;
             height: auto;
-            margin: 1rem;
+            margin: 1rem auto;
           }
           .card-img {
             margin: auto;
@@ -87,6 +87,15 @@ const CardPreguntas = () => {
           }
           .card-img img {
             width: 100%;
+          }
+          .card-body{
+            padding: 1rem 0.5rem !important ; 
+          }
+          .subtitle-lobtengo{
+            text-align: center;
+          }
+          .text-description-blue{
+            text-align: center;
           }
 
         
