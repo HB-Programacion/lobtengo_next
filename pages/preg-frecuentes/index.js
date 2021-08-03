@@ -17,7 +17,7 @@ const index = () => {
                     <div className="text-subtitle2 text-description-gray">Descuida, si aún te quedan dudas, <span>hemos hecho un listado</span> de las principales preguntas frecuentes.</div>
                 </div>
                 <CardPreguntas/>
-                <CollapsePregFrec/>
+                {/* <CollapsePregFrec/> */}
             </div>
             <style jsx>
                 {`
