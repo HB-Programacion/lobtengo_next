@@ -91,7 +91,8 @@ const Header = (props) => {
           @media (max-width: 768px) {
 
             .header {
-              padding:1rem
+              padding:1rem 1rem 0rem 1rem;
+              align-items:end
             }
             .header__desktop {
               display: none;
