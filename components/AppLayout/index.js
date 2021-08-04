@@ -80,12 +80,34 @@ const index = ({ children }) => {
             font-weight: 700;
             font-size: 1.8rem;
             color: #3a487f;
+            margin: 1rem;
+          }
+          .title-lobtengo-blue-2 {
+            font-family: "Baloo-Regular";
+            font-weight: 700;
+            font-size: 1.6rem;
+            color: #3a487f;
+            margin: 0rem 1rem;
           }
           .title-lobtengo-orange {
             font-family: "Baloo-Regular";
             font-weight: 700;
             font-size: 1.8rem;
             color: #fc6625;
+          }
+          .title-lobtengo-orange-2 {
+            font-family: "Baloo-Regular";
+            font-weight: 700;
+            font-size: 1.6rem;
+            color: #fc6625;
+            margin: 0rem 1rem;
+          }
+          .title-lobtengo-orange-3 {
+            font-family: "Baloo-Regular";
+            font-weight: 500;
+            font-size: 1rem;
+            color: #fc6625;
+            margin: 0rem 1rem;
           }
           .subtitle-lobtengo {
             text-align-last: center;
@@ -148,6 +170,10 @@ const index = ({ children }) => {
             color: #fc6625;
             font-size: 0.8rem;
             margin: 0rem 3rem;
+          }
+          .section-img{
+            text-align: center;
+            margin: 3rem auto;
           }
 
           @media (max-width: 768px) {
