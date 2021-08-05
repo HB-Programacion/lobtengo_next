@@ -185,6 +185,35 @@ const index = ({ children }) => {
             text-align: center;
             margin: 3rem auto;
           }
+          .select-btn-container{
+            margin: 1.5rem;
+            text-align: -webkit-center;
+          }
+          .select-btn{
+            display: flex;
+            place-content: center;
+            width: 60%;
+            padding: 0.8rem 0rem 0.8rem 1.2rem;
+            border: none;
+            background-color: #3a487f;
+            border-radius: 2.5rem;
+          }
+          .select-btn-text{
+            color: #ffffff;
+            font-family: 'neutra-text-bold';
+            font-size: 0.8rem;
+          }
+          .select-btn img{
+            margin-left: 3rem;
+          }
+          .select-ubigeo{
+            margin: 0rem 0.5rem 1rem 0rem;
+            border-radius: 2rem;
+            padding: 0.4rem 0.2rem;
+            border: 0.2rem solid #3a487f;
+            color: #3a487f;
+            font-family: 'neutra-text-bold';
+          }
           @media (max-width: 768px) {
             .title-lobtengo-blue {
               font-size: 1.6rem;
