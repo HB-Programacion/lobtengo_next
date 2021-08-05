@@ -53,6 +53,15 @@ const CardStep = () => {
       </div>
       <style jsx>
         {`
+        {
+            /* -------------------->   DESKTOP FIRST  <-------------------*/
+          }
+           {
+            /* -------------------->   DESKTOP FIRST  <-------------------*/
+          }
+           {
+            /* -------------------->   DESKTOP FIRST  <-------------------*/
+          }
           .container-step {
             display: flex;
           }
@@ -82,11 +91,17 @@ const CardStep = () => {
             }
 
             .card-step {
-              margin: 1rem 0rem;
+              margin: 1rem auto;
+              width: 100%
             }
             .subtitle-lobtengo {
               font-size: 1rem;
               line-height: 1rem;
+            }
+            .text-description-blue{
+              margin:0rem;
+              font-size:.8rem;
+              line-height:.9rem
             }
           }
         `}

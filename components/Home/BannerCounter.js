@@ -66,6 +66,15 @@ const BannerCounter = () => {
       </Container>
       <style jsx>
         {`
+        {
+            /* -------------------->   DESKTOP FIRST  <-------------------*/
+          }
+           {
+            /* -------------------->   DESKTOP FIRST  <-------------------*/
+          }
+           {
+            /* -------------------->   DESKTOP FIRST  <-------------------*/
+          }
           .section-counter {
             display: flex;
             padding: 3rem;
@@ -164,6 +173,17 @@ const BannerCounter = () => {
             .section-counter {
               margin: 2rem auto;
               flex-direction: column;
+              padding: 3.5rem 2rem;
+            }
+            .title-counter{
+              font-size:1.6rem;
+              text-align:center
+            }
+            .text-title {
+              font-size:1.3rem
+            }
+            .card-texto{
+              margin:1rem auto
             }
           }
         `}

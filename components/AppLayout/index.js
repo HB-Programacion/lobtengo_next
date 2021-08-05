@@ -31,11 +31,20 @@ const index = ({ children }) => {
         ocultarMenuMobile={ocultarMenuMobile}
       />
       <main>{children}</main>
-      <Footer/>
+      <Footer />
       <style jsx global>
         {`
+           {
+            /* -------------------->   DESKTOP FIRST  <-------------------*/
+          }
+           {
+            /* -------------------->   DESKTOP FIRST  <-------------------*/
+          }
+           {
+            /* -------------------->   DESKTOP FIRST  <-------------------*/
+          }
           html {
-            font-family:62.5%;
+            font-family: 62.5%;
             font-family: "mont-heavy";
           }
           @font-face {
@@ -64,15 +73,16 @@ const index = ({ children }) => {
           .btn-participa {
             background-color: #3a487f;
             border: none;
-            padding:.6rem .9rem;
+            padding: 0.6rem 0.9rem;
             color: #ffffff;
             border-radius: 20px;
+            margin: 0 auto;
             margin-top: 10px;
             font-family: "neutra-text-bold";
-            display:flex;
-            justify-content:center;
-            align-items:center;
-            font-size:.75rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 0.75rem;
             text-transform: uppercase;
           }
           .title-lobtengo-blue {
@@ -119,7 +129,7 @@ const index = ({ children }) => {
             letter-spacing: 0.01rem;
             line-height: 1.6rem;
           }
-          .centerText{
+          .centerText {
             text-align: center;
             margin: 0rem 0.8rem;
           }
@@ -134,7 +144,7 @@ const index = ({ children }) => {
             text-align: center;
             margin: 1rem;
           }
-          .text-description-gray{
+          .text-description-gray {
             font-size: 1rem;
             font-family: "neutra-text-bold";
             color: #878787;
@@ -144,41 +154,48 @@ const index = ({ children }) => {
             text-align: justify;
             margin: 1rem;
           }
-           .subtitle-gray {
-            font-family: 'neutra-text-bold';
+          .subtitle-gray {
+            font-family: "neutra-text-bold";
             color: #878787;
             font-size: 1rem;
             text-align: center;
             margin: 0rem 3rem;
           }
           .subtitle-blue {
-            font-family: 'neutra-text-bold';
+            font-family: "neutra-text-bold";
             color: #3a487f;
             font-size: 1rem;
             margin: 0rem 3rem;
             text-align: center;
           }
           .subtitle-orange {
-            font-family: 'neutra-text-bold';
+            font-family: "neutra-text-bold";
             color: #fc6625;
             font-size: 1rem;
             margin: 0rem 3rem;
             text-align: center;
           }
           .subtitle-orange2 {
-            font-family: 'neutra-text-bold';
+            font-family: "neutra-text-bold";
             color: #fc6625;
             font-size: 0.8rem;
             margin: 0rem 3rem;
           }
-          .section-img{
+          .section-img {
             text-align: center;
             margin: 3rem auto;
           }
-
           @media (max-width: 768px) {
-            html {
-              font-size: 4.6vw !important;
+            .title-lobtengo-blue {
+              font-size: 1.6rem;
+              margin:0rem;
+              text-align:center
+            }
+            .btn-participa {
+              margin: 1rem auto;
+            }
+            .subtitle-gray,.subtitle-orange  {
+              margin: 0rem
             }
           }
         `}

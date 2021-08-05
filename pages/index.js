@@ -57,7 +57,7 @@ const index = () => {
               
               </Col>
               <Col xs={12} sm={9} md={9} lg={9} xl={9}>
-                {/* <CardStep /> */}
+                <CardStep />
               </Col>
             </Row>
           </Container>
@@ -127,6 +127,9 @@ const index = () => {
       </div>
       <style jsx>
         {`
+        {/* -------------------->   DESKTOP FIRST  <-------------------*/}
+        {/* -------------------->   DESKTOP FIRST  <-------------------*/}
+        {/* -------------------->   DESKTOP FIRST  <-------------------*/}
           .section-banner {
             background-size: cover;
             justify-content: left;
@@ -193,7 +196,7 @@ const index = () => {
             }
             .text-comolobtengo {
               margin-top: 1rem;
-              padding: 2rem;
+              padding: 1.5rem;
             }
           }
         `}
