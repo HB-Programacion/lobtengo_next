@@ -169,6 +169,7 @@ const BannerCounter = () => {
             position: relative
           }
 
+         
           @media (max-width: 768px) {
             .section-counter {
               margin: 2rem auto;
@@ -192,6 +193,7 @@ const BannerCounter = () => {
               bottom:5rem
             }
           }
+
         `}
       </style>
     </>
