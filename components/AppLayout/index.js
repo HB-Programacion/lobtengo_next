@@ -192,20 +192,19 @@ const index = ({ children }) => {
           .select-btn{
             display: flex;
             place-content: center;
-            width: 60%;
+            width: 40%;
             padding: 0.8rem 0rem 0.8rem 1.2rem;
             border: none;
             background-color: #3a487f;
             border-radius: 2.5rem;
+            justify-content: space-around;
           }
           .select-btn-text{
             color: #ffffff;
             font-family: 'neutra-text-bold';
             font-size: 0.8rem;
           }
-          .select-btn img{
-            margin-left: 3rem;
-          }
+          
           .select-ubigeo{
             margin: 0rem 0.5rem 1rem 0rem;
             border-radius: 2rem;
@@ -227,7 +226,8 @@ const index = ({ children }) => {
               margin: 0rem;
               text-align:center
             }
-            
+            .select-btn{
+            width: 80%;
           }
         `}
       </style>
