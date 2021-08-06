@@ -39,6 +39,15 @@ const SectionPreguntas = () => {
       </div>
       <style jsx>
         {`
+        {
+            /* -------------------->   MOBILE FIRST  <-------------------*/
+          }
+           {
+            /* -------------------->   MOBILE FIRST  <-------------------*/
+          }
+           {
+            /* -------------------->   MOBILE FIRST  <-------------------*/
+          }
           .nosotros-preguntas--img {
             text-align: center;
           }

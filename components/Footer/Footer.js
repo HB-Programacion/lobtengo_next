@@ -102,6 +102,17 @@ const Footer = () => {
         </div>
       </div>
       <style jsx>{`
+
+      {
+            /* -------------------->   MOBILE FIRST  <-------------------*/
+          }
+           {
+            /* -------------------->   MOBILE FIRST  <-------------------*/
+          }
+           {
+            /* -------------------->   MOBILE FIRST  <-------------------*/
+          }
+
         .footer {
           background: #3a487f;
           text-align: center;

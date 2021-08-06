@@ -66,6 +66,15 @@ const CardPreguntas = () => {
       </Row>
       <style jsx>
         {`
+        {
+            /* -------------------->   DESKTOP FIRST  <-------------------*/
+          }
+           {
+            /* -------------------->   DESKTOP FIRST  <-------------------*/
+          }
+           {
+            /* -------------------->   DESKTOP FIRST  <-------------------*/
+          }
           .card-step {
             text-align: center;
             padding: 1rem;

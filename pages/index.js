@@ -43,18 +43,16 @@ const index = () => {
           <Container>
             <Row className="step">
               <Col xs={12} sm={3} md={3} lg={3} xl={3}>
-               
-                  <div className="text-comolobtengo">
-                    <h3 className="title-lobtengo-blue">¿Cómo Lobtengo?</h3>
-                    <h6 className="subtitle-gray">
-                      Participar del sorteo es muy simple.
-                    </h6>
-                    <h6 className="subtitle-orange">
-                      ¡Solo son 3 pasos y listo!
-                    </h6>
-                    <button className="btn-participa">PARTICIPA AHORA</button>
-                  </div>
-              
+                <div className="text-comolobtengo">
+                  <h3 className="title-lobtengo-blue">¿Cómo Lobtengo?</h3>
+                  <h6 className="subtitle-gray">
+                    Participar del sorteo es muy simple.
+                  </h6>
+                  <h6 className="subtitle-orange">
+                    ¡Solo son 3 pasos y listo!
+                  </h6>
+                  <button className="btn-participa">PARTICIPA AHORA</button>
+                </div>
               </Col>
               <Col xs={12} sm={9} md={9} lg={9} xl={9}>
                 <CardStep />
@@ -62,10 +60,8 @@ const index = () => {
             </Row>
           </Container>
         </div>
-
         <div>
           <BannerCounter />
-
           <div className="section-preguntas">
             <Container>
               <Row>
@@ -78,10 +74,10 @@ const index = () => {
                   xl={4}
                 >
                   <div className="text-preguntas">
-                    <h5 className="subtitle-gray">
-                      Preguntas Frecuentes
-                    </h5>
-                    <h3 className="title-lobtengo-blue">Informarte es importante</h3>
+                    <h5 className="subtitle-gray">Preguntas Frecuentes</h5>
+                    <h3 className="title-lobtengo-blue">
+                      Informarte es importante
+                    </h3>
                     <h6 className=" subtitle-gray">
                       Tómate unos minutos para revisar estas preguntas y aclarar
                       todas tus dudas.
@@ -127,9 +123,15 @@ const index = () => {
       </div>
       <style jsx>
         {`
-        {/* -------------------->   DESKTOP FIRST  <-------------------*/}
-        {/* -------------------->   DESKTOP FIRST  <-------------------*/}
-        {/* -------------------->   DESKTOP FIRST  <-------------------*/}
+           {
+            /* -------------------->   DESKTOP FIRST  <-------------------*/
+          }
+           {
+            /* -------------------->   DESKTOP FIRST  <-------------------*/
+          }
+           {
+            /* -------------------->   DESKTOP FIRST  <-------------------*/
+          }
           .section-banner {
             background-size: cover;
             justify-content: left;
@@ -141,10 +143,10 @@ const index = () => {
             position: relative;
           }
 
-          :global(.step.row){
+          :global(.step.row) {
             display: flex;
             justify-content: center;
-            align-items: center!important;
+            align-items: center !important;
           }
           .text-comolobtengo {
             text-align: center;
@@ -162,7 +164,7 @@ const index = () => {
             padding: 1rem;
             text-align: start;
           }
-       
+
           .enlace-verMas a {
             color: #3a487f;
             font-family: "neutra-text-bold";
@@ -178,11 +180,11 @@ const index = () => {
             color: #878787;
             font-size: 1.6rem;
           }
-     
+
           .text-notaria img {
             margin: 2rem auto;
           }
-       
+
           .descripcion-notaria a {
             color: #fc6625;
             text-decoration: none;

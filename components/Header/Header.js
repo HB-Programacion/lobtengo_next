@@ -47,6 +47,15 @@ const Header = (props) => {
       </nav>
       <style jsx>
         {`
+        {
+            /* -------------------->   DESKTOP FIRST  <-------------------*/
+          }
+           {
+            /* -------------------->   DESKTOP FIRST  <-------------------*/
+          }
+           {
+            /* -------------------->   DESKTOP FIRST  <-------------------*/
+          }
           .header {
             padding: 1rem;
             display: flex;

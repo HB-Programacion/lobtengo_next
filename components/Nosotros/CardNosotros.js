@@ -47,6 +47,16 @@ const CardNosotros = () => {
       </Row>
       <style jsx>
         {`
+        {
+            /* -------------------->   DESKTOP FIRST  <-------------------*/
+          }
+           {
+            /* -------------------->   DESKTOP FIRST  <-------------------*/
+          }
+           {
+            /* -------------------->   DESKTOP FIRST  <-------------------*/
+          }
+
           .container-nosotros{
             display: flex;
             place-content: center;

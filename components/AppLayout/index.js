@@ -4,6 +4,7 @@ import Header from "../Header/Header";
 import HeaderMobile from "../Header/HeaderMobile";
 import Footer from "../Footer/Footer";
 
+
 const index = ({ children }) => {
   const [menuBurgerOpen, setmenuBurgerOpen] = useState(false);
   const mostrarMenuMobile = () => {
@@ -34,7 +35,6 @@ const index = ({ children }) => {
       <Footer />
       <style jsx global>
         {`
-        
         {
             /* -------------------->   DESKTOP FIRST  <-------------------*/
           }
@@ -92,7 +92,6 @@ const index = ({ children }) => {
             color: #3a487f;
             margin: 1rem 0rem;
           }
-        
           .title-lobtengo-blue-2 {
             font-family: "Baloo-Regular";
             font-weight: 700;
