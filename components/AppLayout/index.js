@@ -34,7 +34,8 @@ const index = ({ children }) => {
       <Footer />
       <style jsx global>
         {`
-           {
+        
+        {
             /* -------------------->   DESKTOP FIRST  <-------------------*/
           }
            {
@@ -76,7 +77,6 @@ const index = ({ children }) => {
             padding: 0.6rem 0.9rem;
             color: #ffffff;
             border-radius: 20px;
-            margin: 0 auto;
             margin-top: 10px;
             font-family: "neutra-text-bold";
             display: flex;
@@ -90,8 +90,9 @@ const index = ({ children }) => {
             font-weight: 700;
             font-size: 1.8rem;
             color: #3a487f;
-            margin: 1rem;
+            margin: 1rem 0rem;
           }
+        
           .title-lobtengo-blue-2 {
             font-family: "Baloo-Regular";
             font-weight: 700;
@@ -158,8 +159,8 @@ const index = ({ children }) => {
             font-family: "neutra-text-bold";
             color: #878787;
             font-size: 1rem;
-            text-align: center;
-            margin: 0rem 3rem;
+            text-align: left;
+            margin: 0rem;
           }
           .subtitle-blue {
             font-family: "neutra-text-bold";
@@ -172,8 +173,8 @@ const index = ({ children }) => {
             font-family: "neutra-text-bold";
             color: #fc6625;
             font-size: 1rem;
-            margin: 0rem 3rem;
-            text-align: center;
+            margin: 0rem 0rem;
+            text-align: left;
           }
           .subtitle-orange2 {
             font-family: "neutra-text-bold";
@@ -224,8 +225,10 @@ const index = ({ children }) => {
               margin: 1rem auto;
             }
             .subtitle-gray,.subtitle-orange  {
-              margin: 0rem
+              margin: 0rem;
+              text-align:center
             }
+            
           }
         `}
       </style>

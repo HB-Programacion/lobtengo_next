@@ -174,6 +174,8 @@ const BannerCounter = () => {
               margin: 2rem auto;
               flex-direction: column;
               padding: 3.5rem 2rem;
+              padding-bottom:6rem;
+              position:relative
             }
             .title-counter{
               font-size:1.6rem;
@@ -184,6 +186,10 @@ const BannerCounter = () => {
             }
             .card-texto{
               margin:1rem auto
+            }
+            .box-btn-right{
+              position:absolute;
+              bottom:5rem
             }
           }
         `}
