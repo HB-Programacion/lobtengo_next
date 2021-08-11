@@ -26,68 +26,68 @@ const CardNosotros = () => {
   const [preguntas, setPreguntas] = useState(initialState);
 
   return (
-    <>
-      <Row className="container-nosotros">
-        {preguntas.map((pregunta) => (
-          <div className="card-nosotros">
-            <div className="nosotros-card-img">
-              <Card.Img
-                variant="top"
-                src={pregunta.image}
-                alt="imagen nosotros"
-              />
+    <div className="container-nosotros">
+      <Container>
+        <Row className="container-nosotros">
+          {preguntas.map((pregunta) => (
+            <div className="card-nosotros">
+              <div className="nosotros-card-img">
+                <Card.Img
+                  variant="top"
+                  src={pregunta.image}
+                  alt="imagen nosotros"
+                />
+              </div>
+              <Card.Body>
+                <Card.Title>
+                  <div className="subtitle-lobtengo">{pregunta.title}</div>
+                </Card.Title>
+              </Card.Body>
             </div>
-            <Card.Body>
-              <Card.Title>
-                <div className="card-nosotros-title">{pregunta.title}</div>
-              </Card.Title>
-            </Card.Body>
-          </div>
-        ))}
-      </Row>
+          ))}
+        </Row>
+      </Container>
       <style jsx>
         {`
-        {
-            /* -------------------->   DESKTOP FIRST  <-------------------*/
+           {
+            /* -------------------->   MOBILE FIRST  <-------------------*/
           }
            {
-            /* -------------------->   DESKTOP FIRST  <-------------------*/
+            /* -------------------->   MOBILE FIRST  <-------------------*/
           }
            {
-            /* -------------------->   DESKTOP FIRST  <-------------------*/
+            /* -------------------->   MOBILE FIRST  <-------------------*/
           }
 
-          .container-nosotros{
-            display: flex;
-            place-content: center;
+          .container-nosotros {
+            position:relative;
+            top:3rem
           }
           .card-nosotros {
             text-align: center;
-            padding: 1rem 1.5rem;
+            padding: 1rem;
             background: #ffffff;
             box-shadow: 2px 2px 13px 2px rgb(0 0 0 / 20%);
             border-radius: 20px;
             font-family: "mont-regular" !important;
-            width: 73%;
+            width: 90%;
             height: auto;
-            margin: 2rem 2rem;
+            margin:1rem auto
           }
           .nosotros-card-img {
             margin: auto;
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 15%;
+            width: 18%;
           }
-          .card-nosotros-title {
-            font-size: 22px;
-            font-weight: 700;
-            font-family: "neutra-text-bold";
-            color: #3a487f;
+          .subtitle-lobtengo{
+            text-align:center
           }
+  
         `}
       </style>
-    </>
+    </div>
   );
 };
 

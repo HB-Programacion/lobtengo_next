@@ -4,7 +4,6 @@ import Header from "../Header/Header";
 import HeaderMobile from "../Header/HeaderMobile";
 import Footer from "../Footer/Footer";
 
-
 const index = ({ children }) => {
   const [menuBurgerOpen, setmenuBurgerOpen] = useState(false);
   const mostrarMenuMobile = () => {
@@ -70,7 +69,13 @@ const index = ({ children }) => {
           .cl-plomo {
             color: #878787;
           }
-
+          .cl-orange{
+            color: #fc6625;
+          }
+          .p-relative{
+            position:relative
+          }
+          
           .btn-participa {
             background-color: #3a487f;
             border: none;
@@ -120,7 +125,7 @@ const index = ({ children }) => {
             margin: 0rem 1rem;
           }
           .subtitle-lobtengo {
-            text-align-last: center;
+            text-align: center;
             font-size: 1.3rem;
             font-weight: 700;
             font-family: "neutra-text-bold";
@@ -213,9 +218,12 @@ const index = ({ children }) => {
             color: #3a487f;
             font-family: 'neutra-text-bold';
           }
+          .text-left{
+            text-align:left!important
+          }
           @media (max-width: 768px) {
             .title-lobtengo-blue {
-              font-size: 1.6rem;
+              font-size: 1.65rem;
               margin:0rem;
               text-align:center
             }
@@ -229,6 +237,15 @@ const index = ({ children }) => {
             .select-btn{
             width: 80%;
           }
+          .text-description-blue{
+              margin:0rem;
+              font-size:.8rem;
+              line-height:.9rem
+            }
+            .subtitle-lobtengo {
+              font-size: 1rem;
+              line-height: 1rem;
+            }
         `}
       </style>
     </div>

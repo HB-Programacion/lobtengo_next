@@ -1,61 +1,115 @@
 import React from "react";
+import { Container } from "react-bootstrap";
 
 const SectionPreguntas = () => {
   return (
     <>
-      <div className="nosotros-preguntas">
-        <div className="nosotros-preguntas--title1">Preguntas frecuentes</div>
-        <div className="nosotros-preguntas--img">
-          <img src="./icons/nosotros/preguntas-home.svg" />
+      <Container>
+        <div className="nosotros-preguntas">
+          <div className="nosotros-preguntas--title1">Preguntas frecuentes</div>
+          <div className="nosotros-preguntas--img">
+            <img src="./icons/nosotros/preguntas-home.svg" />
+          </div>
+          <div className="subtitle-gray">¿Quiénes pueden participar?</div>
+          <div className="title-lobtengo-blue">Lobtengo es para todos</div>
+
+         <Container>
+         <div className="subtitle-gray-nosotros">
+            Si eres alguien que está en búsqueda de una propiedad:
+          </div>
+          <ul className="nosotros-preguntas--lista">
+            <li>
+              <img src="./icons/nosotros/arrowRigth.svg" />{" "}
+              <span>Para mudarte</span> solo o con tu familia.
+            </li>
+            <li>
+              <img src="./icons/nosotros/arrowRigth.svg" />{" "}
+              <span>Para comprar</span> un segundo inmueble.
+            </li>
+            <li>
+              <img src="./icons/nosotros/arrowRigth.svg" />{" "}
+              <span>Para invertir</span> en bienes raíces.{" "}
+            </li>
+          </ul>
+          <div className="subtitle-gray text-left">
+            O si tan solo deseas probar suerte y obtener un depa{" "}
+            <span className="cl-orange">por S/ 60 soles.</span>
+          </div>
+         </Container>
+          <div className="btn-participa btn-participa-nosotros">
+            PARTICIPA AHORA
+          </div>
         </div>
-        <div className="nosotros-preguntas--subtitle">
-          ¿Quiénes pueden participar?
-        </div>
-        <div className="nosotros-preguntas--title">Lobtengo es para todos</div>
-        <div className="nosotros-home--descripcion1">
-          Si eres alguien que está en búsqueda de una propiedad:
-        </div>
-        <ul className="nosotros-preguntas--lista">
-          <li>
-            <img src="./icons/nosotros/arrowRigth.svg" />{" "}
-            <span>Para mudarte</span> solo o con tu familia.
-          </li>
-          <li>
-            <img src="./icons/nosotros/arrowRigth.svg" />{" "}
-            <span>Para comprar</span> un segundo inmueble.
-          </li>
-          <li>
-            <img src="./icons/nosotros/arrowRigth.svg" />{" "}
-            <span>Para invertir</span> en bienes raíces.{" "}
-          </li>
-        </ul>
-        <div className="nosotros-home--descripcion2">
-          O si tan solo deseas probar suerte y obtener un depa{" "}
-          <span>por S/ 60 soles.</span>
-        </div>
-        <div className="btn-participa">
-          <button>PARTICIPA AHORA</button>
-        </div>
-      </div>
+      </Container>
       <style jsx>
         {`
-        {
-            /* -------------------->   MOBILE FIRST  <-------------------*/
-          }
            {
             /* -------------------->   MOBILE FIRST  <-------------------*/
           }
            {
             /* -------------------->   MOBILE FIRST  <-------------------*/
           }
-          .nosotros-preguntas--img {
-            text-align: center;
+           {
+            /* -------------------->   MOBILE FIRST  <-------------------*/
           }
 
-          body {
-            margin-top: 5rem;
-          }
+  
+            .nosotros-preguntas {
+              position: relative;
+              top: 3rem;
+              bottom:3rem
+            }
+            .nosotros-preguntas--title1 {
+              font-size: 1.2rem;
+              font-family: "neutra-text-bold";
+              color: #3a487f;
+              text-align: center;
+              margin: 1rem auto;
+              text-decoration: underline;
+              font-weight: 700;
+            }
+            .subtitle-gray-nosotros{
+              font-family: "neutra-text-bold";
+              color: #878787;
+              font-size: 1rem;
+              text-align: start;
+              list-style: none;
+              margin-top: 1rem;
+              
+            }
+            .nosotros-preguntas--img {
+              margin: 2rem auto;
+              width: 60%;
+            }
+            .nosotros-preguntas--img img {
+              width: 100%;
+            }
+            .nosotros-preguntas--lista{
+              padding-left: 0rem !important;
+            }
+            .nosotros-preguntas--lista li {
+              font-family: "neutra-text-bold";
+              color: #878787;
+              font-size: 1rem;
+              text-align: start;
+              list-style: none;
+              margin-top: 1rem;
+              
+            }
 
+            .nosotros-preguntas--lista span {
+              color: #fc6625;
+            }
+
+            .btn-participa {
+              text-align: center;
+            }
+            .btn-participa-nosotros{
+              width:60%;
+              margin: 4rem auto;
+              margin-bottom:10rem
+            }
+           
           @media (min-width: 1800px) {
           }
           @media (min-width: 1024px) {
@@ -63,80 +117,6 @@ const SectionPreguntas = () => {
           @media (min-width: 768px) {
           }
           @media (min-width: 480px) {
-          }
-          @media (min-width: 320px) {
-            .nosotros-preguntas--title1 {
-              font-size: 20px;
-              font-family: "neutra-text-bold";
-              color: #3a487f;
-              text-align: center;
-              margin: 5rem auto;
-              text-decoration: underline;
-              font-weight: 700;
-            }
-            .nosotros-preguntas--img img {
-              margin: 10rem auto;
-              width: 60%;
-            }
-            .nosotros-preguntas--subtitle {
-              color: #878787;
-              font-family: "Baloo-Regular";
-              font-size: 15px;
-              font-weight: 600;
-              margin: 0rem auto;
-              text-align: center;
-            }
-            .nosotros-preguntas--title {
-              color: #3a487f;
-              font-family: "Baloo-Regular";
-              font-size: 25px;
-              text-align: center;
-              font-weight: 800;
-              margin: 0rem 8rem;
-            }
-            .nosotros-home--descripcion1 {
-              font-family: "neutra-text-bold";
-              color: #878787;
-              font-size: 15px;
-              text-align: start;
-              margin: 25px 50px;
-              text-align: start;
-            }
-            .nosotros-preguntas--lista li {
-              font-family: "neutra-text-bold";
-              color: #878787;
-              font-size: 18px;
-              text-align: start;
-              margin: 20px 40px;
-              list-style: none;
-            }
-            .nosotros-preguntas--lista span {
-              color: #fc6625;
-            }
-            .nosotros-home--descripcion2 {
-              font-family: "neutra-text-bold";
-              color: #878787;
-              font-size: 15px;
-              text-align: start;
-              margin: 25px 50px;
-              text-align: start;
-            }
-            .nosotros-home--descripcion2 span {
-              color: #fc6625;
-            }
-            .btn-participa {
-              text-align: center;
-            }
-            .btn-participa button {
-              background-color: #3a487f;
-              font-size: 15px;
-              border: none;
-              padding: 7px 10px;
-              color: #ffffff;
-              border-radius: 20px;
-              margin: 10px 0px 100px 0px;
-              font-family: "neutra-text-bold";
-            }
           }
         `}
       </style>
