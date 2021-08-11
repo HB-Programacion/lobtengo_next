@@ -94,15 +94,8 @@ const CardStep = () => {
               margin: 1rem auto;
               width: 100%
             }
-            .subtitle-lobtengo {
-              font-size: 1rem;
-              line-height: 1rem;
-            }
-            .text-description-blue{
-              margin:0rem;
-              font-size:.8rem;
-              line-height:.9rem
-            }
+           
+          
           }
         `}
       </style>

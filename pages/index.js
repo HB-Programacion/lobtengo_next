@@ -95,15 +95,15 @@ const index = () => {
               </Row>
             </Container>
           </div>
+          <Container>
           <div className="seccion-notaria">
-            {" "}
             <Row className="notaria">
               <Col xs={12} sm={12} md={12} lg={12} xl={12}>
                 <div className="text-notaria">
                   <h5 className="subtitle-gray ">
                     Tranquilo, tenemos total respaldo
                   </h5>
-                  <h3 className="title-lobtengo">
+                  <h3 className="title-lobtengo-blue">
                     Notaría Aramburú y asociados
                   </h3>
                   <h6 className="subtitle-gray ">
@@ -119,6 +119,7 @@ const index = () => {
               </Col>
             </Row>
           </div>
+          </Container>
         </div>
       </div>
       <style jsx>
@@ -184,12 +185,18 @@ const index = () => {
           .text-notaria img {
             margin: 2rem auto;
           }
-
+         
           .descripcion-notaria a {
             color: #fc6625;
             text-decoration: none;
+            
           }
           @media (max-width: 768px) {
+
+            .section-preguntas{
+              position:relative;
+              top: 2.5rem
+            }
             .view-mobile {
               display: block;
             }
@@ -200,6 +207,12 @@ const index = () => {
               margin-top: 1rem;
               padding: 1.5rem;
             }
+            .enlace-verMas {
+              text-align: center;
+            }
+            .descripcion-notaria {
+            font-size:.8rem
+          }
           }
         `}
       </style>

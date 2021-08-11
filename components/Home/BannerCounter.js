@@ -4,7 +4,7 @@ import { Card, Col, Container, Row } from "react-bootstrap";
 const BannerCounter = () => {
   return (
     <>
-      <Container >
+      <Container  className="p-relative">
         <Row className="justify-content-center">
           <div className="section-counter">
             <Col
@@ -75,6 +75,7 @@ const BannerCounter = () => {
            {
             /* -------------------->   DESKTOP FIRST  <-------------------*/
           }
+        
           .section-counter {
             display: flex;
             padding: 3rem;
@@ -82,6 +83,7 @@ const BannerCounter = () => {
             background-color: #fc6625;
             margin: 0rem auto;
             border-radius: 1rem;
+            position:relative
           }
           .title-counter {
             font-family: "Baloo-Regular";
@@ -189,8 +191,10 @@ const BannerCounter = () => {
               margin:1rem auto
             }
             .box-btn-right{
-              position:absolute;
-              bottom:5rem
+             position: absolute;
+             bottom:5%;
+             left:50%;
+             transform:translateX(-50%)
             }
           }
 

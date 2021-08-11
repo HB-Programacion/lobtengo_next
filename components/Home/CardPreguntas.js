@@ -50,16 +50,18 @@ const CardPreguntas = () => {
                   className="card-img-step"
                 />
               </div>
-              <Card.Body>
-                <Card.Title>
-                  <div className="subtitle-lobtengo">{pregunta.title}</div>
-                </Card.Title>
-                <Card.Text>
-                  <div className="text-description-blue">
-                    {pregunta.subtitle}
-                  </div>
-                </Card.Text>
-              </Card.Body>
+              <div className="card-body-preguntas">
+                <Card.Body>
+                  <Card.Title>
+                    <div className="subtitle-lobtengo">{pregunta.title}</div>
+                  </Card.Title>
+                  <Card.Text>
+                    <div className="text-description-blue">
+                      {pregunta.subtitle}
+                    </div>
+                  </Card.Text>
+                </Card.Body>
+              </div>
             </div>
           </>
         ))}
@@ -107,7 +109,16 @@ const CardPreguntas = () => {
             text-align: center;
           }
 
-        
+          @media (max-width: 768px) {
+            :global(.card-body-preguntas .card-body){
+              padding:0rem;
+              margin:1rem
+            }
+            .text-description-blue{
+            margin:.5rem;
+
+          }
+          }
           }
         `}
       </style>
