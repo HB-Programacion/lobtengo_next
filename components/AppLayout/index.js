@@ -245,6 +245,7 @@ const index = ({ children }) => {
             .subtitle-lobtengo {
               font-size: 1rem;
               line-height: 1rem;
+              text-align:center
             }
         `}
       </style>
