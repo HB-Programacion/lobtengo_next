@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
+import { useRouter } from "next/router";
+import Link from "next/link";
 
 const HeaderMobile = (props) => {
   const [expand, setExpand] = useState(false);
@@ -32,51 +34,86 @@ const HeaderMobile = (props) => {
               <p className="header__mobile-correo">hola@gmail.com</p>
             </div>
           </div>
-          <li className="center-item">
-            <img src="/images/header/perfil.svg" className="mr-1 img-item" />
-            Mi perfil
-          </li>
-          <li className="center-item">
-            <img src="/images/header/compras.svg" className="mr-1 img-item" />
-            Mis compras
-          </li>
+          <Link href="/perfil">
+            <a>
+              <li className="center-item">
+                <img
+                  src="/images/header/perfil.svg"
+                  className="mr-1 img-item"
+                />
+                Mi perfil
+              </li>
+            </a>
+          </Link>
+          <Link href="/mis-compras">
+            <a>
+              <li className="center-item">
+                <img
+                  src="/images/header/compras.svg"
+                  className="mr-1 img-item"
+                />
+                Mis compras
+              </li>
+            </a>
+          </Link>
           <hr />
           <div className="box-items">
-            <li>
-              <img
-                src="/images/header/dot-circle.svg"
-                className="mr-1 img-item"
-              />
-              Inicio
-            </li>
-            <li>
-              <img
-                src="/images/header/dot-circle.svg"
-                className="mr-1 img-item"
-              />
-              Nosotros
-            </li>
-            <li>
-              <img
-                src="/images/header/dot-circle.svg"
-                className="mr-1 img-item"
-              />
-              Como Funciona
-            </li>
-            <li>
-              <img
-                src="/images/header/dot-circle.svg"
-                className="mr-1 img-item"
-              />
-              Participa
-            </li>
-            <li>
-              <img
-                src="/images/header/dot-circle.svg"
-                className="mr-1 img-item"
-              />
-              El depa
-            </li>
+            <Link href="/">
+              <a>
+                {" "}
+                <li>
+                  <img
+                    src="/images/header/dot-circle.svg"
+                    className="mr-1 img-item"
+                  />
+                  Inicio
+                </li>
+              </a>
+            </Link>
+            <Link href="nosotros">
+              <a>
+                <li>
+                  <img
+                    src="/images/header/dot-circle.svg"
+                    className="mr-1 img-item"
+                  />
+                  Nosotros
+                </li>
+              </a>
+            </Link>
+            <Link href="como-funciona">
+              <a>
+                <li>
+                  <img
+                    src="/images/header/dot-circle.svg"
+                    className="mr-1 img-item"
+                  />
+                  Como Funciona
+                </li>
+              </a>
+            </Link>
+            <Link href="participa-2">
+              <a>
+                <li>
+                  <img
+                    src="/images/header/dot-circle.svg"
+                    className="mr-1 img-item"
+                  />
+                  Participa
+                </li>
+              </a>
+            </Link>
+            <Link href="/elDepa">
+              <a>
+                <li>
+                  <img
+                    src="/images/header/dot-circle.svg"
+                    className="mr-1 img-item"
+                  />
+                  El depa
+                </li>
+              </a>
+            </Link>
             <div className="box-ayuda">
               <li>
                 <img
@@ -91,11 +128,24 @@ const HeaderMobile = (props) => {
                   />
                 </span>
               </li>
+
               {expand && (
                 <div className="box-ayuda-items">
-                  <p>Preguntas frecuentes</p>
-                  <p>Cóntactanos</p>
-                  <p>Encuesta</p>
+                  <Link href="/preg-frecuentes">
+                    <a>
+                      <p>Preguntas frecuentes</p>
+                    </a>
+                  </Link>
+                  <Link href="/contactanos">
+                    <a>
+                      <p>Cóntactanos</p>
+                    </a>
+                  </Link>
+                  <Link href="/encuesta">
+                    <a>
+                      <p>Encuesta</p>
+                    </a>
+                  </Link>
                 </div>
               )}
               <li></li>
@@ -153,6 +203,10 @@ const HeaderMobile = (props) => {
           .header__mobile li {
             display: flex;
             align-items: center;
+          }
+          .header__mobile a {
+            color: #ffff;
+            text-decoration: none;
           }
           .center-item {
             display: flex;
@@ -221,7 +275,7 @@ const HeaderMobile = (props) => {
             font-family: "neutra-text-ligth";
             font-size: 0.9rem;
             transition: transform 0.3s ease-out;
-            position:fixed
+            position: fixed;
           }
           .box-ayuda-items p {
             margin-bottom: 0.2rem;
