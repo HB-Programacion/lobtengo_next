@@ -97,6 +97,13 @@ const index = ({ children }) => {
             color: #3a487f;
             margin: 1rem 0rem;
           }
+          .title-lobtengo-blanco{
+            font-family: "Baloo-Regular";
+            font-weight: 700;
+            font-size: 1.8rem;
+            color: #ffffff;
+            margin: 1rem 0rem;
+          }
           .title-lobtengo-blue-2 {
             font-family: "Baloo-Regular";
             font-weight: 700;
@@ -220,6 +227,35 @@ const index = ({ children }) => {
           }
           .text-left{
             text-align:left!important
+          }
+          .card-subtitle{
+            text-align: center;
+            font-family: 'baloo-regular';
+            font-weight: 400;
+            font-size: 1.2rem;
+            color: #878787;
+          }
+          .card-title{
+            text-align: center;
+            color: #3a487f;
+            font-family: 'baloo-regular';
+            font-size: 2rem;
+            padding: 0rem;
+            margin: 0rem 0.5rem;
+            font-weight: 400;
+            font-style: normal;
+          }
+          .card-description{
+            margin: 1rem 2rem;
+            text-align: center;
+            color: #878787;
+            font-size: 1.2rem;
+            line-height: 25.3px;
+            font-weight: 700;
+            font-family: 'neutra-text-bold';
+          }
+          .card-link{
+            text-align-last: center;
           }
           @media (max-width: 768px) {
             .title-lobtengo-blue {
