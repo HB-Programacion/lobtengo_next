@@ -34,7 +34,7 @@ const Footer = () => {
               width={10}
               height={10}
             />
-            <Link href="/">
+            <Link href="/nosotros">
               <a>NOSOTROS</a>
             </Link>
           </div>
@@ -45,7 +45,7 @@ const Footer = () => {
               width={10}
               height={10}
             />
-            <Link href="/">
+            <Link href="/como-funciona">
               <a>¿COMO FUNCIONA?</a>
             </Link>
           </div>
@@ -56,7 +56,7 @@ const Footer = () => {
               width={10}
               height={10}
             />
-            <Link href="/">
+            <Link href="/Participa-2">
               <a>PARTICIPA</a>
             </Link>
           </div>
@@ -69,7 +69,7 @@ const Footer = () => {
               width={10}
               height={10}
             />
-            <Link href="/">
+            <Link href="/elDepa">
               <a>EL DEPA</a>
             </Link>
           </div>
@@ -80,7 +80,7 @@ const Footer = () => {
               width={10}
               height={10}
             />
-            <Link href="/">
+            <Link href="/preg-frecuentes">
               <a>PREGUNTAS FRECUENTES</a>
             </Link>
           </div>
@@ -97,21 +97,25 @@ const Footer = () => {
           </div>
         </div>
         <div className="box-redes">
-          <FontAwesomeIcon icon={faFacebookF} />
-          <FontAwesomeIcon icon={faInstagram} />
+          <a href="/">
+            <FontAwesomeIcon icon={faFacebookF} />
+          </a>
+          <a href="/">
+            {" "}
+            <FontAwesomeIcon icon={faInstagram} />
+          </a>
         </div>
       </div>
       <style jsx>{`
-
-      {
-            /* -------------------->   MOBILE FIRST  <-------------------*/
-          }
-           {
-            /* -------------------->   MOBILE FIRST  <-------------------*/
-          }
-           {
-            /* -------------------->   MOBILE FIRST  <-------------------*/
-          }
+         {
+          /* -------------------->   MOBILE FIRST  <-------------------*/
+        }
+         {
+          /* -------------------->   MOBILE FIRST  <-------------------*/
+        }
+         {
+          /* -------------------->   MOBILE FIRST  <-------------------*/
+        }
 
         .footer {
           background: #3a487f;
@@ -132,22 +136,24 @@ const Footer = () => {
           font-size: 0.9rem;
           padding-left: 0.3rem;
         }
-        .box-redes {
+        .box-redes a {
           color: #fff;
-          padding: 1rem;
-          font-size:1.3rem;
-          display:flex;
-          justify-content:center;
-          align-items:center
         }
-        :global(.box-redes svg){
-          margin:.5rem
+        .box-redes {
+          padding: 1rem;
+          font-size: 1.3rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        :global(.box-redes svg) {
+          margin: 0.5rem;
         }
         @media (min-width: 768px) {
           .footer {
             display: flex;
             justify-content: space-around;
-            align-items:center;
+            align-items: center;
             padding: 3rem 1rem;
           }
         }

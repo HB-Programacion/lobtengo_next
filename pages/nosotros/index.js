@@ -34,7 +34,7 @@ const index = () => {
       </Container>
       <CardNosotros />
       <SectionPreguntas />
-      <style jsx global>
+      <style jsx>
         {`
            {
             /* -------------------->   MOBILE FIRST  <-------------------*/

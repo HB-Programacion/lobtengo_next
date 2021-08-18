@@ -70,7 +70,7 @@ const index = ({ children }) => {
             color: #878787;
           }
           .cl-orange{
-            color: #fc6625;
+            color: #fc6625!important;
           }
           .p-relative{
             position:relative
